@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hitachi AC Range | Yamini Enterprises, Jodhpur</title>
+  <meta name="description" content="Browse 100+ Hitachi air conditioners at Yamini Enterprises, Jodhpur: inverter and fixed speed splits, window, cassette, ductable, VRF systems and chillers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Products</span></nav>
+        <h1>The complete Hitachi air conditioning range</h1>
+        <p>Over 100 models across 7 categories, from bedroom splits to building-wide VRF and chiller plants. Prices change with season and stock, so ask for the latest quote.</p>
+      </div>
+    </section>
+
+    <div class="catalog-bar">
+      <div class="container">
+        <div class="cat-tabs" id="catTabs" role="tablist" aria-label="Product categories"></div>
+        <label class="search"><span class="sr-only">Search products</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="search" type="search" placeholder="Search model, series, tonnage…">
+        </label>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top:48px">
+      <div class="container">
+        <div class="cat-intro">
+          <div><h2 id="catTitle"></h2><p id="catDesc"></p></div>
+          <span class="result-count" id="resultCount"></span>
+        </div>
+        <div class="prod-grid" id="prodGrid"></div>
+        <div class="empty" id="empty" hidden>
+          <h3>No products match your search</h3>
+          <p>Try another model name, or <a class="link-arrow" href="contact.html#enquiry">ask us directly</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" style="padding-top:0;background:none">
+      <div class="container">
+        <div class="band">
+          <div style="position:relative;z-index:1">
+            <h2>Can't find the exact model?</h2>
+            <p>We stock and source the full current Hitachi line-up. Tell us what you need and we'll confirm availability and the best price.</p>
+          </div>
+          <div class="band-actions">
+            <a class="btn btn-light" href="contact.html#enquiry">Request a quote</a>
+            <a class="btn btn-ghost" data-href-wa="Hello, I'm looking for a Hitachi AC model that I couldn't find on your website." href="#" target="_blank" rel="noopener">Ask on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Product detail modal -->
+  <div class="modal" id="prodModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <button class="modal-close" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      <div class="modal-media"><div class="modal-main" id="mMain"></div><div class="thumbs" id="mThumbs"></div></div>
+      <div class="modal-info" id="mInfo"></div>
+    </div>
+  </div>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
+</body>
+</html>

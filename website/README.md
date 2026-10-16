@@ -1,0 +1,29 @@
+# Yamini Enterprises: sample website
+
+A static site (HTML, CSS and plain JavaScript) with no build step. Open `index.html` in a browser to view it.
+
+## Pages
+| File | Contents |
+|---|---|
+| `index.html` | Home: hero, stats, product categories, solutions by space, why us, process, projects, showroom, testimonials, enquiry form |
+| `products.html` | All products: category tabs, search, and a detail popup (photos, specs, features, WhatsApp enquiry) |
+| `services.html` | Services, process, AMC plans, industries, FAQ |
+| `about.html` | Story, founder, milestones, factsheet, showroom gallery |
+| `contact.html` | Contact cards, enquiry form, map, directions |
+
+## Where to update things
+| What | Where |
+|---|---|
+| Phone, email, address, hours, social links, logo, owner photo, tagline | `assets/js/site-config.js` (any `null` value shows as a `[PLACEHOLDER]`) |
+| Products and categories | `assets/js/products-data.js` (generated from the IndiaMART catalogue; edit directly) |
+| Product and store images | `../company-data/images/` (`website/images` is a symlink to it) |
+| Projects, testimonials, client logos, AMC prices, FAQ answers | Search the HTML for `ph-text` and `data-ph="` |
+| Colours and fonts | Top of `assets/css/style.css` (`:root`) |
+
+Placeholders are highlighted in amber for review. Set `showPlaceholderHints: false` in `site-config.js` to make them neutral before going live.
+
+## Notes
+- The enquiry forms have no server. Submitting opens WhatsApp with the details filled in, and the second button opens an email instead.
+- The map pin on the Contact page is an approximate address search. Put the exact Google Maps embed URL in `mapEmbed`.
+- Run locally: `cd website && python3 -m http.server 8000`, then open http://localhost:8000
+- `website/images` is a symlink. When deploying, replace it with a real copy of the folder (`cp -RL images images_real`), because many hosts don't follow symlinks.

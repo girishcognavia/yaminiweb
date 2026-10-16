@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Yamini Enterprises, Ratanada, Jodhpur</title>
+  <meta name="description" content="Contact Yamini Enterprises (Hitachi Studio), Anand Mangal Building, Old Loco Shed Road, Ratanada, Jodhpur. Call +91 94141 00877 for Hitachi AC sales and service.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
+        <h1>Talk to our team</h1>
+        <p>Get a quote, book a site survey or request service. Call, WhatsApp or visit the Hitachi Studio in Ratanada.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-bottom:48px">
+      <div class="container">
+        <div class="contact-cards">
+          <div class="contact-card reveal"><span class="ico" data-icon="phone"></span><small>Mobile</small><span data-bind="phone"></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="headset"></span><small>Landline</small><span data-bind="landlines"></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="mail"></span><small>Email</small><span data-bind="email" style="word-break:break-all"></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="pin"></span><small>Showroom</small><span data-bind="address" style="font-weight:600"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="enquiry" style="padding-top:72px">
+      <div class="container">
+        <div class="consult reveal">
+          <div class="consult-info">
+            <span class="eyebrow">Enquiry</span>
+            <h2>Request a quote or service</h2>
+            <p>Fill in the form and it opens WhatsApp with your details ready to send, so there's no waiting for an email reply.</p>
+            <ul class="contact-list">
+              <li><span class="ico" data-icon="user"></span><div><small>Contact person</small><span>Mr. <span data-bind="owner"></span></span></div></li>
+              <li><span class="ico" data-icon="clock"></span><div><small>Business hours</small><span data-bind="hours"></span></div></li>
+              <li><span class="ico" data-icon="award"></span><div><small>GSTIN</small><span data-bind="gst"></span></div></li>
+            </ul>
+          </div>
+          <form class="consult-form" data-enquiry novalidate>
+            <div class="form-grid">
+              <div class="field"><label for="c-name">Your name *</label><input id="c-name" name="Name" required autocomplete="name"></div>
+              <div class="field"><label for="c-phone">Phone *</label><input id="c-phone" name="Phone" type="tel" required pattern="[0-9+ -]{10,}" autocomplete="tel"></div>
+              <div class="field"><label for="c-email">Email</label><input id="c-email" name="Email" type="email" autocomplete="email"></div>
+              <div class="field"><label for="c-type">I'm a</label>
+                <select id="c-type" name="Customer type"><option>Homeowner</option><option>Business / Office</option><option>Builder / Contractor</option><option>Dealer</option><option>Institution (hospital, school…)</option></select>
+              </div>
+              <div class="field full"><label>Requirement</label>
+                <div class="pill-group">
+                  <label><input type="radio" name="Requirement" value="New AC purchase" checked><span>New AC</span></label>
+                  <label><input type="radio" name="Requirement" value="Central AC / VRF project"><span>Central AC / VRF</span></label>
+                  <label><input type="radio" name="Requirement" value="Installation"><span>Installation</span></label>
+                  <label><input type="radio" name="Requirement" value="AMC"><span>AMC</span></label>
+                  <label><input type="radio" name="Requirement" value="Repair"><span>Repair</span></label>
+                  <label><input type="radio" name="Requirement" value="Site survey"><span>Free site survey</span></label>
+                </div>
+              </div>
+              <div class="field full"><label for="c-msg">Details</label><textarea id="c-msg" name="Details" placeholder="Model you're interested in, number of rooms, area, issue with your AC…"></textarea></div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-wa" type="submit"><span data-wa></span>Send on WhatsApp</button>
+              <button class="btn btn-outline" type="button" data-send-email>Send by email</button>
+            </div>
+            <p class="form-note">Your details are only used to respond to your enquiry.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container why" style="align-items:stretch">
+        <div class="map-wrap reveal" id="mapWrap"></div>
+        <div class="reveal" style="display:flex;flex-direction:column;justify-content:center">
+          <span class="eyebrow">Visit us</span>
+          <h2>Hitachi Studio, Ratanada</h2>
+          <p style="color:var(--muted)" data-bind="address"></p>
+          <p style="color:var(--muted)">Look for the red <strong>HITACHI STUDIO</strong> sign on Old Loco Shed Road.</p>
+          <img data-src="helplinesearch/helplinesearch-1.jpg" alt="Red Hitachi Studio storefront sign" style="border-radius:16px;margin:8px 0 22px;aspect-ratio:16/9;object-fit:cover;width:100%">
+          <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" id="directions" target="_blank" rel="noopener" href="#">Get directions</a><a class="btn btn-outline" data-href-tel href="#">Call before visiting</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      const S = window.SITE;
+      document.querySelectorAll("[data-wa]").forEach((el) => (el.outerHTML = window.WA_SVG.replace("<svg", '<svg style="width:18px;height:18px"')));
+      const q = encodeURIComponent(S.address.mapQuery);
+      document.getElementById("directions").href = `https://www.google.com/maps/search/?api=1&query=${q}`;
+      const src = S.mapEmbed || `https://maps.google.com/maps?q=${q}&z=16&output=embed`;
+      document.getElementById("mapWrap").innerHTML =
+        (S.mapEmbed ? "" : `<span class="ph-badge map-note">Approximate pin: verify exact location</span>`) +
+        `<iframe src="${src}" title="Map to Yamini Enterprises" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+    })();
+  </script>
+</body>
+</html>
