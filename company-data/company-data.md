@@ -2,7 +2,7 @@
 
 > Collected on **15 Oct 2026** from the company's only public listings (they have no website yet).
 > Anything marked `[PLACEHOLDER]` is missing and must be confirmed with the client before launch.
-> Images are in [`images/`](images/), and every path below is relative to this file.
+> Images are in [`../images/`](../images/), and every path below is relative to this file.
 
 **Sources**
 1. IndiaMART: https://www.indiamart.com/yamini-enterprises-jodhpur/ (profile, products, photos, videos, reviews)
@@ -103,31 +103,31 @@ Testimonials for website: `[PLACEHOLDER]` (collect real customer quotes from the
 
 ## 7. Media
 
-### 7.1 Store and company photos (`images/gallery/`, from IndiaMART "Company Album")
+### 7.1 Store and company photos (`../images/gallery/`, from IndiaMART "Company Album")
 
 | File | What it shows |
 |---|---|
-| [company-signboard-1.png](images/gallery/company-signboard-1.png) | Red "HITACHI STUDIO" storefront, front view |
-| [company-signboard-2.png](images/gallery/company-signboard-2.png) | Red "HITACHI STUDIO" storefront with glass entrance |
-| [showroom-1.png](images/gallery/showroom-1.png) | Showroom interior with a wall of split AC indoor units |
-| [showroom-2.png](images/gallery/showroom-2.png) | Hitachi-branded "Air Conditioner" display stand with units |
-| [showroom-3.png](images/gallery/showroom-3.png) | Staff member at the Hitachi reception counter with Hitachi branding behind |
-| [showroom-4.png](images/gallery/showroom-4.png) | Wall display of split AC indoor units |
-| [showroom-5.png](images/gallery/showroom-5.png) | **Hitachi refrigerators** (black glass multi-door) on display |
-| [showroom-6.png](images/gallery/showroom-6.png) | Long showroom wall of split ACs with the customer counter |
+| [company-signboard-1.png](../images/gallery/company-signboard-1.png) | Red "HITACHI STUDIO" storefront, front view |
+| [company-signboard-2.png](../images/gallery/company-signboard-2.png) | Red "HITACHI STUDIO" storefront with glass entrance |
+| [showroom-1.png](../images/gallery/showroom-1.png) | Showroom interior with a wall of split AC indoor units |
+| [showroom-2.png](../images/gallery/showroom-2.png) | Hitachi-branded "Air Conditioner" display stand with units |
+| [showroom-3.png](../images/gallery/showroom-3.png) | Staff member at the Hitachi reception counter with Hitachi branding behind |
+| [showroom-4.png](../images/gallery/showroom-4.png) | Wall display of split AC indoor units |
+| [showroom-5.png](../images/gallery/showroom-5.png) | **Hitachi refrigerators** (black glass multi-door) on display |
+| [showroom-6.png](../images/gallery/showroom-6.png) | Long showroom wall of split ACs with the customer counter |
 
-### 7.2 Store photos from Helplinesearch (`images/helplinesearch/`)
+### 7.2 Store photos from Helplinesearch (`../images/helplinesearch/`)
 
 | File | What it shows |
 |---|---|
-| [helplinesearch-1.jpg](images/helplinesearch/helplinesearch-1.jpg) | "HITACHI STUDIO" red storefront signboard (good hero/contact image) |
-| [helplinesearch-2.jpg](images/helplinesearch/helplinesearch-2.jpg) | Wide showroom interior: AC wall, Hitachi counter, outdoor units (good "About us" image) |
-| [helplinesearch-3.jpg](images/helplinesearch/helplinesearch-3.jpg) | Showroom display wall of Hitachi split ACs |
-| [helplinesearch-4.jpg](images/helplinesearch/helplinesearch-4.jpg) | Hitachi-branded AC display wall |
+| [helplinesearch-1.jpg](../images/helplinesearch/helplinesearch-1.jpg) | "HITACHI STUDIO" red storefront signboard (good hero/contact image) |
+| [helplinesearch-2.jpg](../images/helplinesearch/helplinesearch-2.jpg) | Wide showroom interior: AC wall, Hitachi counter, outdoor units (good "About us" image) |
+| [helplinesearch-3.jpg](../images/helplinesearch/helplinesearch-3.jpg) | Showroom display wall of Hitachi split ACs |
+| [helplinesearch-4.jpg](../images/helplinesearch/helplinesearch-4.jpg) | Hitachi-branded AC display wall |
 
 ### 7.3 Video
 
-- Product video (Hitachi Kashikoi 5300FX / Merai 3300S): https://www.youtube.com/watch?v=hngpuQiMiiY. Thumbnail: [video-thumbnail-hngpuQiMiiY.jpg](images/video/video-thumbnail-hngpuQiMiiY.jpg)
+- Product video (Hitachi Kashikoi 5300FX / Merai 3300S): https://www.youtube.com/watch?v=hngpuQiMiiY. Thumbnail: [video-thumbnail-hngpuQiMiiY.jpg](../images/video/video-thumbnail-hngpuQiMiiY.jpg)
 
 ### 7.4 Brand look (for website design)
 
@@ -161,16 +161,16 @@ Products with no image use `[PLACEHOLDER IMAGE]`.
 
 | # | Category | Products | Folder |
 |---|---|---|---|
-| 9.1 | Inverter Split ACs | 22 | `images/products/inverter-split-acs/` |
-| 9.2 | Fixed Speed Split ACs | 9 | `images/products/fixed-speed-split-acs/` |
-| 9.3 | Window ACs | 11 | `images/products/window-acs/` |
-| 9.4 | Light Commercial Air Conditioners | 14 | `images/products/light-commercial-air-conditioners/` |
-| 9.5 | Ductable Air Conditioners | 26 | `images/products/ductable-air-conditioners/` |
-| 9.6 | VRF Systems | 21 | `images/products/vrf-systems/` |
-| 9.7 | Hitachi Chillers | 3 | `images/products/hitachi-chillers/` |
-| 9.8 | AC (Other) | 4 | `images/products/ac/` |
-| 9.9 | AC Installation Service | 1 | `images/products/ac-installation-service/` |
-| 9.10 | AC Maintenance Service | 1 | `images/products/ac-maintenance-service/` |
+| 9.1 | Inverter Split ACs | 22 | `../images/products/inverter-split-acs/` |
+| 9.2 | Fixed Speed Split ACs | 9 | `../images/products/fixed-speed-split-acs/` |
+| 9.3 | Window ACs | 11 | `../images/products/window-acs/` |
+| 9.4 | Light Commercial Air Conditioners | 14 | `../images/products/light-commercial-air-conditioners/` |
+| 9.5 | Ductable Air Conditioners | 26 | `../images/products/ductable-air-conditioners/` |
+| 9.6 | VRF Systems | 21 | `../images/products/vrf-systems/` |
+| 9.7 | Hitachi Chillers | 3 | `../images/products/hitachi-chillers/` |
+| 9.8 | AC (Other) | 4 | `../images/products/ac/` |
+| 9.9 | AC Installation Service | 1 | `../images/products/ac-installation-service/` |
+| 9.10 | AC Maintenance Service | 1 | `../images/products/ac-maintenance-service/` |
 
 ### 9.1 Inverter Split ACs (22)
 
@@ -178,9 +178,9 @@ Products with no image use `[PLACEHOLDER IMAGE]`.
 
 #### 9.1.1 Hitachi Merai 3300S Inverter Split ACs
 
-**Images:** [hitachi-merai-3300s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs.jpg) · [hitachi-merai-3300s-inverter-split-acs-2.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-2.jpg) · [hitachi-merai-3300s-inverter-split-acs-3.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-3.jpg) · [hitachi-merai-3300s-inverter-split-acs-4.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-4.jpg) · [hitachi-merai-3300s-inverter-split-acs-5.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-5.jpg) · [hitachi-merai-3300s-inverter-split-acs-6.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-6.jpg) · [hitachi-merai-3300s-inverter-split-acs-7.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-7.jpg) · [hitachi-merai-3300s-inverter-split-acs-8.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-8.jpg) · [hitachi-merai-3300s-inverter-split-acs-9.jpg](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-9.jpg)
+**Images:** [hitachi-merai-3300s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs.jpg) · [hitachi-merai-3300s-inverter-split-acs-2.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-2.jpg) · [hitachi-merai-3300s-inverter-split-acs-3.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-3.jpg) · [hitachi-merai-3300s-inverter-split-acs-4.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-4.jpg) · [hitachi-merai-3300s-inverter-split-acs-5.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-5.jpg) · [hitachi-merai-3300s-inverter-split-acs-6.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-6.jpg) · [hitachi-merai-3300s-inverter-split-acs-7.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-7.jpg) · [hitachi-merai-3300s-inverter-split-acs-8.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-8.jpg) · [hitachi-merai-3300s-inverter-split-acs-9.jpg](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs-9.jpg)
 
-![Hitachi Merai 3300S Inverter Split ACs](images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs.jpg)
+![Hitachi Merai 3300S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-merai-3300s-inverter-split-acs.jpg)
 
 **Video:** https://www.youtube.com/watch?v=hngpuQiMiiY
 
@@ -215,9 +215,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-merai-3300s-inverter-split-
 
 #### 9.1.2 Hitachi Kashikoi 5300FX Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5300fx-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-2.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-2.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-3.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-3.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-4.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-4.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-5.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-5.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-6.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-6.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-7.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-7.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-8.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-8.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-9.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-9.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-10.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-10.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-11.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-11.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-12.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-12.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-13.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-13.jpg)
+**Images:** [hitachi-kashikoi-5300fx-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-2.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-2.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-3.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-3.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-4.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-4.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-5.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-5.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-6.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-6.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-7.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-7.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-8.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-8.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-9.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-9.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-10.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-10.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-11.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-11.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-12.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-12.jpg) · [hitachi-kashikoi-5300fx-inverter-split-acs-13.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs-13.jpg)
 
-![Hitachi Kashikoi 5300FX Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5300FX Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5300fx-inverter-split-acs.jpg)
 
 **Video:** https://www.youtube.com/watch?v=hngpuQiMiiY
 
@@ -252,9 +252,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5300fx-inverter-sp
 
 #### 9.1.3 Hitachi Merai 4100S Inverter Split ACs
 
-**Images:** [hitachi-merai-4100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-merai-4100s-inverter-split-acs.jpg)
+**Images:** [hitachi-merai-4100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-merai-4100s-inverter-split-acs.jpg)
 
-![Hitachi Merai 4100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-merai-4100s-inverter-split-acs.jpg)
+![Hitachi Merai 4100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-merai-4100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -286,9 +286,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-merai-4100s-inverter-split-
 
 #### 9.1.4 Hitachi Sugoi 4100S Inverter Split ACs
 
-**Images:** [hitachi-sugoi-4100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-sugoi-4100s-inverter-split-acs.jpg)
+**Images:** [hitachi-sugoi-4100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-sugoi-4100s-inverter-split-acs.jpg)
 
-![Hitachi Sugoi 4100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-sugoi-4100s-inverter-split-acs.jpg)
+![Hitachi Sugoi 4100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-sugoi-4100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -320,9 +320,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-sugoi-4100s-inverter-split-
 
 #### 9.1.5 Hitachi Kashikoi 5100X Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5100x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5100x-inverter-split-acs.jpg)
+**Images:** [hitachi-kashikoi-5100x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5100x-inverter-split-acs.jpg)
 
-![Hitachi Kashikoi 5100X Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5100x-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5100X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5100x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -355,9 +355,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5100x-inverter-spl
 
 #### 9.1.6 Hitachi Kashikoi 5100X Plus Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5100x-plus-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-inverter-split-acs.jpg)
+**Images:** [hitachi-kashikoi-5100x-plus-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-inverter-split-acs.jpg)
 
-![Hitachi Kashikoi 5100X Plus Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5100X Plus Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -390,9 +390,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5100x-plus-inverte
 
 #### 9.1.7 Hitachi Kashikoi 5100X Plus Plus Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5100x-plus-plus-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-plus-inverter-split-acs.jpg)
+**Images:** [hitachi-kashikoi-5100x-plus-plus-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-plus-inverter-split-acs.jpg)
 
-![Hitachi Kashikoi 5100X Plus Plus Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-plus-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5100X Plus Plus Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5100x-plus-plus-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -425,9 +425,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5100x-plus-plus-in
 
 #### 9.1.8 Hitachi Kashikoi 5200X HP Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5200x-hp-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5200x-hp-inverter-split-acs.jpg)
+**Images:** [hitachi-kashikoi-5200x-hp-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5200x-hp-inverter-split-acs.jpg)
 
-![Hitachi Kashikoi 5200X HP Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5200x-hp-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5200X HP Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5200x-hp-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -460,9 +460,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5200x-hp-inverter-
 
 #### 9.1.9 Hitachi Kashikoi 5300X Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5300x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5300x-inverter-split-acs.jpg)
+**Images:** [hitachi-kashikoi-5300x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5300x-inverter-split-acs.jpg)
 
-![Hitachi Kashikoi 5300X Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5300x-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5300X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5300x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -495,9 +495,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5300x-inverter-spl
 
 #### 9.1.10 Hitachi Kashikoi 5400X Inverter Split ACs
 
-**Images:** [hitachi-kashikoi-5400x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-kashikoi-5400x-inverter-split-acs.jpg)
+**Images:** [hitachi-kashikoi-5400x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-kashikoi-5400x-inverter-split-acs.jpg)
 
-![Hitachi Kashikoi 5400X Inverter Split ACs](images/products/inverter-split-acs/hitachi-kashikoi-5400x-inverter-split-acs.jpg)
+![Hitachi Kashikoi 5400X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-kashikoi-5400x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -530,9 +530,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kashikoi-5400x-inverter-spl
 
 #### 9.1.11 Hitachi Takeshi 5100X Inverter Split ACs
 
-**Images:** [hitachi-takeshi-5100x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-takeshi-5100x-inverter-split-acs.jpg)
+**Images:** [hitachi-takeshi-5100x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-takeshi-5100x-inverter-split-acs.jpg)
 
-![Hitachi Takeshi 5100X Inverter Split ACs](images/products/inverter-split-acs/hitachi-takeshi-5100x-inverter-split-acs.jpg)
+![Hitachi Takeshi 5100X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-takeshi-5100x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -563,9 +563,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takeshi-5100x-inverter-spli
 
 #### 9.1.12 Hitachi Toushi 3100S Inverter Split ACs
 
-**Images:** [hitachi-toushi-3100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-toushi-3100s-inverter-split-acs.jpg)
+**Images:** [hitachi-toushi-3100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-toushi-3100s-inverter-split-acs.jpg)
 
-![Hitachi Toushi 3100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-toushi-3100s-inverter-split-acs.jpg)
+![Hitachi Toushi 3100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-toushi-3100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -597,9 +597,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-3100s-inverter-split
 
 #### 9.1.13 Hitachi Toushi 5100X Inverter Split ACs
 
-**Images:** [hitachi-toushi-5100x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-toushi-5100x-inverter-split-acs.jpg)
+**Images:** [hitachi-toushi-5100x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-toushi-5100x-inverter-split-acs.jpg)
 
-![Hitachi Toushi 5100X Inverter Split ACs](images/products/inverter-split-acs/hitachi-toushi-5100x-inverter-split-acs.jpg)
+![Hitachi Toushi 5100X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-toushi-5100x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -632,9 +632,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-5100x-inverter-split
 
 #### 9.1.14 Hitachi Logicool 3100S Inverter Split ACs
 
-**Images:** [hitachi-logicool-3100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-logicool-3100s-inverter-split-acs.jpg)
+**Images:** [hitachi-logicool-3100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-logicool-3100s-inverter-split-acs.jpg)
 
-![Hitachi Logicool 3100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-logicool-3100s-inverter-split-acs.jpg)
+![Hitachi Logicool 3100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-logicool-3100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -666,9 +666,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-3100s-inverter-spl
 
 #### 9.1.15 Hitachi Logicool 4100S Inverter Split ACs
 
-**Images:** [hitachi-logicool-4100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-logicool-4100s-inverter-split-acs.jpg)
+**Images:** [hitachi-logicool-4100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-logicool-4100s-inverter-split-acs.jpg)
 
-![Hitachi Logicool 4100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-logicool-4100s-inverter-split-acs.jpg)
+![Hitachi Logicool 4100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-logicool-4100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -700,9 +700,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-4100s-inverter-spl
 
 #### 9.1.16 Hitachi Logicool 5100X Inverter Split ACs
 
-**Images:** [hitachi-logicool-5100x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-logicool-5100x-inverter-split-acs.jpg)
+**Images:** [hitachi-logicool-5100x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-logicool-5100x-inverter-split-acs.jpg)
 
-![Hitachi Logicool 5100X Inverter Split ACs](images/products/inverter-split-acs/hitachi-logicool-5100x-inverter-split-acs.jpg)
+![Hitachi Logicool 5100X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-logicool-5100x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -734,9 +734,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-5100x-inverter-spl
 
 #### 9.1.17 Hitachi Merai 3100S Inverter Split ACs
 
-**Images:** [hitachi-merai-3100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-merai-3100s-inverter-split-acs.jpg)
+**Images:** [hitachi-merai-3100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-merai-3100s-inverter-split-acs.jpg)
 
-![Hitachi Merai 3100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-merai-3100s-inverter-split-acs.jpg)
+![Hitachi Merai 3100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-merai-3100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -768,9 +768,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-merai-3100s-inverter-split-
 
 #### 9.1.18 Hitachi Merai 3100X Inverter Split ACs
 
-**Images:** [hitachi-merai-3100x-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-merai-3100x-inverter-split-acs.jpg)
+**Images:** [hitachi-merai-3100x-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-merai-3100x-inverter-split-acs.jpg)
 
-![Hitachi Merai 3100X Inverter Split ACs](images/products/inverter-split-acs/hitachi-merai-3100x-inverter-split-acs.jpg)
+![Hitachi Merai 3100X Inverter Split ACs](../images/products/inverter-split-acs/hitachi-merai-3100x-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -802,9 +802,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-merai-3100x-inverter-split-
 
 #### 9.1.19 Hitachi Sugoi 3100S Inverter Split ACs
 
-**Images:** [hitachi-sugoi-3100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-sugoi-3100s-inverter-split-acs.jpg)
+**Images:** [hitachi-sugoi-3100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-sugoi-3100s-inverter-split-acs.jpg)
 
-![Hitachi Sugoi 3100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-sugoi-3100s-inverter-split-acs.jpg)
+![Hitachi Sugoi 3100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-sugoi-3100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -836,9 +836,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-sugoi-3100s-inverter-split-
 
 #### 9.1.20 Hitachi ACE 3100S Inverter Split ACs
 
-**Images:** [hitachi-ace-3100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-ace-3100s-inverter-split-acs.jpg)
+**Images:** [hitachi-ace-3100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-ace-3100s-inverter-split-acs.jpg)
 
-![Hitachi ACE 3100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-ace-3100s-inverter-split-acs.jpg)
+![Hitachi ACE 3100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-ace-3100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -869,9 +869,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-ace-3100s-inverter-split-ac
 
 #### 9.1.21 Hitachi ACE 4100S Inverter Split ACs
 
-**Images:** [hitachi-ace-4100s-inverter-split-acs.jpg](images/products/inverter-split-acs/hitachi-ace-4100s-inverter-split-acs.jpg)
+**Images:** [hitachi-ace-4100s-inverter-split-acs.jpg](../images/products/inverter-split-acs/hitachi-ace-4100s-inverter-split-acs.jpg)
 
-![Hitachi ACE 4100S Inverter Split ACs](images/products/inverter-split-acs/hitachi-ace-4100s-inverter-split-acs.jpg)
+![Hitachi ACE 4100S Inverter Split ACs](../images/products/inverter-split-acs/hitachi-ace-4100s-inverter-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -914,9 +914,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-ace-4100s-inverter-split-ac
 
 #### 9.2.1 Hitachi Zunoh 3100F 1.5TR Fixed Speed Split ACs
 
-**Images:** [hitachi-zunoh-3100f-1-5tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-5tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-zunoh-3100f-1-5tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-5tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Zunoh 3100F 1.5TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-5tr-fixed-speed-split-acs.jpg)
+![Hitachi Zunoh 3100F 1.5TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-5tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -939,9 +939,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-zunoh-3100f-1-5tr-fixed-spe
 
 #### 9.2.2 Hitachi Zunoh 3100F 2.0TR Fixed Speed Split ACs
 
-**Images:** [hitachi-zunoh-3100f-2-0tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-2-0tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-zunoh-3100f-2-0tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-2-0tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Zunoh 3100F 2.0TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-2-0tr-fixed-speed-split-acs.jpg)
+![Hitachi Zunoh 3100F 2.0TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-2-0tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -963,9 +963,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-zunoh-3100f-2-0tr-fixed-spe
 
 #### 9.2.3 Hitachi Logicool 3100F 1.5TR Fixed Speed Split ACs
 
-**Images:** [hitachi-logicool-3100f-1-5tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-5tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-logicool-3100f-1-5tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-5tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Logicool 3100F 1.5TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-5tr-fixed-speed-split-acs.jpg)
+![Hitachi Logicool 3100F 1.5TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-5tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -988,9 +988,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-3100f-1-5tr-fixed-
 
 #### 9.2.4 Hitachi Zunoh 3100F 1.8TR Fixed Speed Split ACs
 
-**Images:** [hitachi-zunoh-3100f-1-8tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-8tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-zunoh-3100f-1-8tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-8tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Zunoh 3100F 1.8TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-8tr-fixed-speed-split-acs.jpg)
+![Hitachi Zunoh 3100F 1.8TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-8tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1012,9 +1012,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-zunoh-3100f-1-8tr-fixed-spe
 
 #### 9.2.5 Hitachi Logicool 3100F 1.8TR Fixed Speed Split ACs
 
-**Images:** [hitachi-logicool-3100f-1-8tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-8tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-logicool-3100f-1-8tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-8tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Logicool 3100F 1.8TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-8tr-fixed-speed-split-acs.jpg)
+![Hitachi Logicool 3100F 1.8TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-8tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1037,9 +1037,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-3100f-1-8tr-fixed-
 
 #### 9.2.6 Hitachi Logicool 3100F 2.0TR Fixed Speed Split ACs
 
-**Images:** [hitachi-logicool-3100f-2-0tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-2-0tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-logicool-3100f-2-0tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-2-0tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Logicool 3100F 2.0TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-2-0tr-fixed-speed-split-acs.jpg)
+![Hitachi Logicool 3100F 2.0TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-2-0tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1062,9 +1062,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-3100f-2-0tr-fixed-
 
 #### 9.2.7 Hitachi Zunoh 3100F 1.0TR Fixed Speed Split ACs
 
-**Images:** [hitachi-zunoh-3100f-1-0tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-0tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-zunoh-3100f-1-0tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-0tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Zunoh 3100F 1.0TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-0tr-fixed-speed-split-acs.jpg)
+![Hitachi Zunoh 3100F 1.0TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-zunoh-3100f-1-0tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1087,9 +1087,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-zunoh-3100f-1-0tr-fixed-spe
 
 #### 9.2.8 Hitachi Logicool 3100F 1.0TR Fixed Speed Split ACs
 
-**Images:** [hitachi-logicool-3100f-1-0tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-0tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-logicool-3100f-1-0tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-0tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Logicool 3100F 1.0TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-0tr-fixed-speed-split-acs.jpg)
+![Hitachi Logicool 3100F 1.0TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-logicool-3100f-1-0tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1112,9 +1112,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-logicool-3100f-1-0tr-fixed-
 
 #### 9.2.9 Hitachi Takeshi 3100F 2.5TR Fixed Speed Split ACs
 
-**Images:** [hitachi-takeshi-3100f-2-5tr-fixed-speed-split-acs.jpg](images/products/fixed-speed-split-acs/hitachi-takeshi-3100f-2-5tr-fixed-speed-split-acs.jpg)
+**Images:** [hitachi-takeshi-3100f-2-5tr-fixed-speed-split-acs.jpg](../images/products/fixed-speed-split-acs/hitachi-takeshi-3100f-2-5tr-fixed-speed-split-acs.jpg)
 
-![Hitachi Takeshi 3100F 2.5TR Fixed Speed Split ACs](images/products/fixed-speed-split-acs/hitachi-takeshi-3100f-2-5tr-fixed-speed-split-acs.jpg)
+![Hitachi Takeshi 3100F 2.5TR Fixed Speed Split ACs](../images/products/fixed-speed-split-acs/hitachi-takeshi-3100f-2-5tr-fixed-speed-split-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1141,9 +1141,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takeshi-3100f-2-5tr-fixed-s
 
 #### 9.3.1 Hitachi SUMMER QC 1.5TR Window ACs
 
-**Images:** [hitachi-summer-qc-1-5tr-window-acs.jpg](images/products/window-acs/hitachi-summer-qc-1-5tr-window-acs.jpg)
+**Images:** [hitachi-summer-qc-1-5tr-window-acs.jpg](../images/products/window-acs/hitachi-summer-qc-1-5tr-window-acs.jpg)
 
-![Hitachi SUMMER QC 1.5TR Window ACs](images/products/window-acs/hitachi-summer-qc-1-5tr-window-acs.jpg)
+![Hitachi SUMMER QC 1.5TR Window ACs](../images/products/window-acs/hitachi-summer-qc-1-5tr-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1166,9 +1166,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-summer-qc-1-5tr-window-acs-
 
 #### 9.3.2 Hitachi KAZE PLUS RAW511KUD Window ACs
 
-**Images:** [hitachi-kaze-plus-raw511kud-window-acs.jpg](images/products/window-acs/hitachi-kaze-plus-raw511kud-window-acs.jpg)
+**Images:** [hitachi-kaze-plus-raw511kud-window-acs.jpg](../images/products/window-acs/hitachi-kaze-plus-raw511kud-window-acs.jpg)
 
-![Hitachi KAZE PLUS RAW511KUD Window ACs](images/products/window-acs/hitachi-kaze-plus-raw511kud-window-acs.jpg)
+![Hitachi KAZE PLUS RAW511KUD Window ACs](../images/products/window-acs/hitachi-kaze-plus-raw511kud-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1191,9 +1191,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-plus-raw511kud-window-
 
 #### 9.3.3 Hitachi KAZE PLUS RAW312KWD Window ACs
 
-**Images:** [hitachi-kaze-plus-raw312kwd-window-acs.jpg](images/products/window-acs/hitachi-kaze-plus-raw312kwd-window-acs.jpg)
+**Images:** [hitachi-kaze-plus-raw312kwd-window-acs.jpg](../images/products/window-acs/hitachi-kaze-plus-raw312kwd-window-acs.jpg)
 
-![Hitachi KAZE PLUS RAW312KWD Window ACs](images/products/window-acs/hitachi-kaze-plus-raw312kwd-window-acs.jpg)
+![Hitachi KAZE PLUS RAW312KWD Window ACs](../images/products/window-acs/hitachi-kaze-plus-raw312kwd-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1216,9 +1216,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-plus-raw312kwd-window-
 
 #### 9.3.4 Hitachi KAZE PLUS RAW518KUDZ1 Window ACs
 
-**Images:** [hitachi-kaze-plus-raw518kudz1-window-acs.jpg](images/products/window-acs/hitachi-kaze-plus-raw518kudz1-window-acs.jpg)
+**Images:** [hitachi-kaze-plus-raw518kudz1-window-acs.jpg](../images/products/window-acs/hitachi-kaze-plus-raw518kudz1-window-acs.jpg)
 
-![Hitachi KAZE PLUS RAW518KUDZ1 Window ACs](images/products/window-acs/hitachi-kaze-plus-raw518kudz1-window-acs.jpg)
+![Hitachi KAZE PLUS RAW518KUDZ1 Window ACs](../images/products/window-acs/hitachi-kaze-plus-raw518kudz1-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1241,9 +1241,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-plus-raw518kudz1-windo
 
 #### 9.3.5 Hitachi KAZE PLUS RAW318KUD Window ACs
 
-**Images:** [hitachi-kaze-plus-raw318kud-window-acs.jpg](images/products/window-acs/hitachi-kaze-plus-raw318kud-window-acs.jpg)
+**Images:** [hitachi-kaze-plus-raw318kud-window-acs.jpg](../images/products/window-acs/hitachi-kaze-plus-raw318kud-window-acs.jpg)
 
-![Hitachi KAZE PLUS RAW318KUD Window ACs](images/products/window-acs/hitachi-kaze-plus-raw318kud-window-acs.jpg)
+![Hitachi KAZE PLUS RAW318KUD Window ACs](../images/products/window-acs/hitachi-kaze-plus-raw318kud-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1266,9 +1266,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-plus-raw318kud-window-
 
 #### 9.3.6 Hitachi KAZE PLUS RAW218KUD Window ACs
 
-**Images:** [hitachi-kaze-plus-raw218kud-window-acs.jpg](images/products/window-acs/hitachi-kaze-plus-raw218kud-window-acs.jpg)
+**Images:** [hitachi-kaze-plus-raw218kud-window-acs.jpg](../images/products/window-acs/hitachi-kaze-plus-raw218kud-window-acs.jpg)
 
-![Hitachi KAZE PLUS RAW218KUD Window ACs](images/products/window-acs/hitachi-kaze-plus-raw218kud-window-acs.jpg)
+![Hitachi KAZE PLUS RAW218KUD Window ACs](../images/products/window-acs/hitachi-kaze-plus-raw218kud-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1291,9 +1291,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-plus-raw218kud-window-
 
 #### 9.3.7 Hitachi KAZE PLUS RAW222KUD Window ACs
 
-**Images:** [hitachi-kaze-plus-raw222kud-window-acs.jpg](images/products/window-acs/hitachi-kaze-plus-raw222kud-window-acs.jpg)
+**Images:** [hitachi-kaze-plus-raw222kud-window-acs.jpg](../images/products/window-acs/hitachi-kaze-plus-raw222kud-window-acs.jpg)
 
-![Hitachi KAZE PLUS RAW222KUD Window ACs](images/products/window-acs/hitachi-kaze-plus-raw222kud-window-acs.jpg)
+![Hitachi KAZE PLUS RAW222KUD Window ACs](../images/products/window-acs/hitachi-kaze-plus-raw222kud-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1316,9 +1316,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-plus-raw222kud-window-
 
 #### 9.3.8 Hitachi KAZE REIDAN 1.5TR Window ACs
 
-**Images:** [hitachi-kaze-reidan-1-5tr-window-acs.jpg](images/products/window-acs/hitachi-kaze-reidan-1-5tr-window-acs.jpg)
+**Images:** [hitachi-kaze-reidan-1-5tr-window-acs.jpg](../images/products/window-acs/hitachi-kaze-reidan-1-5tr-window-acs.jpg)
 
-![Hitachi KAZE REIDAN 1.5TR Window ACs](images/products/window-acs/hitachi-kaze-reidan-1-5tr-window-acs.jpg)
+![Hitachi KAZE REIDAN 1.5TR Window ACs](../images/products/window-acs/hitachi-kaze-reidan-1-5tr-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1341,9 +1341,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-kaze-reidan-1-5tr-window-ac
 
 #### 9.3.9 Hitachi SUMMER TM Window AC
 
-**Images:** [hitachi-summer-tm-window-ac.jpg](images/products/window-acs/hitachi-summer-tm-window-ac.jpg)
+**Images:** [hitachi-summer-tm-window-ac.jpg](../images/products/window-acs/hitachi-summer-tm-window-ac.jpg)
 
-![Hitachi SUMMER TM Window AC](images/products/window-acs/hitachi-summer-tm-window-ac.jpg)
+![Hitachi SUMMER TM Window AC](../images/products/window-acs/hitachi-summer-tm-window-ac.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1365,9 +1365,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-summer-tm-window-ac-2099704
 
 #### 9.3.10 Hitachi SUMMER QC 1.1TR Window ACs
 
-**Images:** [hitachi-summer-qc-1-1tr-window-acs.jpg](images/products/window-acs/hitachi-summer-qc-1-1tr-window-acs.jpg)
+**Images:** [hitachi-summer-qc-1-1tr-window-acs.jpg](../images/products/window-acs/hitachi-summer-qc-1-1tr-window-acs.jpg)
 
-![Hitachi SUMMER QC 1.1TR Window ACs](images/products/window-acs/hitachi-summer-qc-1-1tr-window-acs.jpg)
+![Hitachi SUMMER QC 1.1TR Window ACs](../images/products/window-acs/hitachi-summer-qc-1-1tr-window-acs.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1401,9 +1401,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-summer-qc-1-1tr-window-acs-
 
 #### 9.4.1 Hitachi Flexi Split Air Conditioner
 
-**Images:** [hitachi-flexi-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner.jpg) · [hitachi-flexi-split-air-conditioner-2.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-2.jpg) · [hitachi-flexi-split-air-conditioner-3.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-3.jpg) · [hitachi-flexi-split-air-conditioner-4.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-4.jpg) · [hitachi-flexi-split-air-conditioner-5.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-5.jpg) · [hitachi-flexi-split-air-conditioner-6.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-6.jpg) · [hitachi-flexi-split-air-conditioner-7.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-7.jpg) · [hitachi-flexi-split-air-conditioner-8.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-8.jpg) · [hitachi-flexi-split-air-conditioner-9.jpg](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-9.jpg)
+**Images:** [hitachi-flexi-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner.jpg) · [hitachi-flexi-split-air-conditioner-2.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-2.jpg) · [hitachi-flexi-split-air-conditioner-3.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-3.jpg) · [hitachi-flexi-split-air-conditioner-4.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-4.jpg) · [hitachi-flexi-split-air-conditioner-5.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-5.jpg) · [hitachi-flexi-split-air-conditioner-6.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-6.jpg) · [hitachi-flexi-split-air-conditioner-7.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-7.jpg) · [hitachi-flexi-split-air-conditioner-8.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-8.jpg) · [hitachi-flexi-split-air-conditioner-9.jpg](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner-9.jpg)
 
-![Hitachi Flexi Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner.jpg)
+![Hitachi Flexi Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-flexi-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1427,9 +1427,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-flexi-split-air-conditioner
 
 #### 9.4.2 Hitachi R410a Inverter Series Cassette Air Conditioner
 
-**Images:** [hitachi-r410a-inverter-series-cassette-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-r410a-inverter-series-cassette-air-conditioner.jpg)
+**Images:** [hitachi-r410a-inverter-series-cassette-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-r410a-inverter-series-cassette-air-conditioner.jpg)
 
-![Hitachi R410a Inverter Series Cassette Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-r410a-inverter-series-cassette-air-conditioner.jpg)
+![Hitachi R410a Inverter Series Cassette Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-r410a-inverter-series-cassette-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1458,9 +1458,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-r410a-inverter-series-casse
 
 #### 9.4.3 Hitachi R410a Fixed Speed Series Cassette Air Conditioner
 
-**Images:** [hitachi-r410a-fixed-speed-series-cassette-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-r410a-fixed-speed-series-cassette-air-conditioner.jpg)
+**Images:** [hitachi-r410a-fixed-speed-series-cassette-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-r410a-fixed-speed-series-cassette-air-conditioner.jpg)
 
-![Hitachi R410a Fixed Speed Series Cassette Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-r410a-fixed-speed-series-cassette-air-conditioner.jpg)
+![Hitachi R410a Fixed Speed Series Cassette Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-r410a-fixed-speed-series-cassette-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1490,9 +1490,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-r410a-fixed-speed-series-ca
 
 #### 9.4.4 Hitachi R22 Fixed Speed Series Cassette Air Conditioner
 
-**Images:** [hitachi-r22-fixed-speed-series-cassette-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-r22-fixed-speed-series-cassette-air-conditioner.jpg)
+**Images:** [hitachi-r22-fixed-speed-series-cassette-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-r22-fixed-speed-series-cassette-air-conditioner.jpg)
 
-![Hitachi R22 Fixed Speed Series Cassette Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-r22-fixed-speed-series-cassette-air-conditioner.jpg)
+![Hitachi R22 Fixed Speed Series Cassette Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-r22-fixed-speed-series-cassette-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1522,9 +1522,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-r22-fixed-speed-series-cass
 
 #### 9.4.5 Hitachi 1.5 TR R410a Concealed Split Air Conditioner
 
-**Images:** [hitachi-1-5-tr-r410a-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r410a-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-1-5-tr-r410a-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r410a-concealed-split-air-conditioner.jpg)
 
-![Hitachi 1.5 TR R410a Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r410a-concealed-split-air-conditioner.jpg)
+![Hitachi 1.5 TR R410a Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r410a-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1550,9 +1550,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-1-5-tr-r410a-concealed-spli
 
 #### 9.4.6 Hitachi 2.0 TR R410a Concealed Split Air Conditioner
 
-**Images:** [hitachi-2-0-tr-r410a-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r410a-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-2-0-tr-r410a-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r410a-concealed-split-air-conditioner.jpg)
 
-![Hitachi 2.0 TR R410a Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r410a-concealed-split-air-conditioner.jpg)
+![Hitachi 2.0 TR R410a Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r410a-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1578,9 +1578,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-2-0-tr-r410a-concealed-spli
 
 #### 9.4.7 Hitachi 3.0 TR R410a Concealed Split Air Conditioner
 
-**Images:** [hitachi-3-0-tr-r410a-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r410a-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-3-0-tr-r410a-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r410a-concealed-split-air-conditioner.jpg)
 
-![Hitachi 3.0 TR R410a Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r410a-concealed-split-air-conditioner.jpg)
+![Hitachi 3.0 TR R410a Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r410a-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1606,9 +1606,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-3-0-tr-r410a-concealed-spli
 
 #### 9.4.8 Hitachi 4.0 TR R410a Concealed Split Air Conditioner
 
-**Images:** [hitachi-4-0-tr-r410a-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r410a-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-4-0-tr-r410a-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r410a-concealed-split-air-conditioner.jpg)
 
-![Hitachi 4.0 TR R410a Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r410a-concealed-split-air-conditioner.jpg)
+![Hitachi 4.0 TR R410a Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r410a-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1634,9 +1634,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-4-0-tr-r410a-concealed-spli
 
 #### 9.4.9 Hitachi 1.5 TR R22 Concealed Split Air Conditioner
 
-**Images:** [hitachi-1-5-tr-r22-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r22-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-1-5-tr-r22-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r22-concealed-split-air-conditioner.jpg)
 
-![Hitachi 1.5 TR R22 Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r22-concealed-split-air-conditioner.jpg)
+![Hitachi 1.5 TR R22 Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-1-5-tr-r22-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1662,9 +1662,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-1-5-tr-r22-concealed-split-
 
 #### 9.4.10 Hitachi 2.0 TR R22 Concealed Split Air Conditioner
 
-**Images:** [hitachi-2-0-tr-r22-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r22-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-2-0-tr-r22-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r22-concealed-split-air-conditioner.jpg)
 
-![Hitachi 2.0 TR R22 Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r22-concealed-split-air-conditioner.jpg)
+![Hitachi 2.0 TR R22 Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-2-0-tr-r22-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1690,9 +1690,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-2-0-tr-r22-concealed-split-
 
 #### 9.4.11 Hitachi 3.0 TR R22 Concealed Split Air Conditioner
 
-**Images:** [hitachi-3-0-tr-r22-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r22-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-3-0-tr-r22-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r22-concealed-split-air-conditioner.jpg)
 
-![Hitachi 3.0 TR R22 Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r22-concealed-split-air-conditioner.jpg)
+![Hitachi 3.0 TR R22 Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-3-0-tr-r22-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1718,9 +1718,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-3-0-tr-r22-concealed-split-
 
 #### 9.4.12 Hitachi 4.0 TR R22 Concealed Split Air Conditioner
 
-**Images:** [hitachi-4-0-tr-r22-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r22-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-4-0-tr-r22-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r22-concealed-split-air-conditioner.jpg)
 
-![Hitachi 4.0 TR R22 Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r22-concealed-split-air-conditioner.jpg)
+![Hitachi 4.0 TR R22 Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-4-0-tr-r22-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1746,9 +1746,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-4-0-tr-r22-concealed-split-
 
 #### 9.4.13 Hitachi 5.0 TR R22 Concealed Split Air Conditioner
 
-**Images:** [hitachi-5-0-tr-r22-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-5-0-tr-r22-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-5-0-tr-r22-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-5-0-tr-r22-concealed-split-air-conditioner.jpg)
 
-![Hitachi 5.0 TR R22 Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-5-0-tr-r22-concealed-split-air-conditioner.jpg)
+![Hitachi 5.0 TR R22 Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-5-0-tr-r22-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1774,9 +1774,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-5-0-tr-r22-concealed-split-
 
 #### 9.4.14 Hitachi 7.5 TR R22 Concealed Split Air Conditioner
 
-**Images:** [hitachi-7-5-tr-r22-concealed-split-air-conditioner.jpg](images/products/light-commercial-air-conditioners/hitachi-7-5-tr-r22-concealed-split-air-conditioner.jpg)
+**Images:** [hitachi-7-5-tr-r22-concealed-split-air-conditioner.jpg](../images/products/light-commercial-air-conditioners/hitachi-7-5-tr-r22-concealed-split-air-conditioner.jpg)
 
-![Hitachi 7.5 TR R22 Concealed Split Air Conditioner](images/products/light-commercial-air-conditioners/hitachi-7-5-tr-r22-concealed-split-air-conditioner.jpg)
+![Hitachi 7.5 TR R22 Concealed Split Air Conditioner](../images/products/light-commercial-air-conditioners/hitachi-7-5-tr-r22-concealed-split-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1806,9 +1806,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-7-5-tr-r22-concealed-split-
 
 #### 9.5.1 Hitachi Toushi Series 5.5TR R410A Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-5-5tr-r410a-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-5-5tr-r410a-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-5-5tr-r410a-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-5-5tr-r410a-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 5.5TR R410A Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-5-5tr-r410a-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 5.5TR R410A Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-5-5tr-r410a-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1834,9 +1834,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-5-5tr-r410a-d
 
 #### 9.5.2 Hitachi Toushi Series 8.5TR R410A Single Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-8-5tr-r410a-single-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-single-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-8-5tr-r410a-single-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-single-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 8.5TR R410A Single Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-single-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 8.5TR R410A Single Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-single-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1862,9 +1862,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-8-5tr-r410a-s
 
 #### 9.5.3 Hitachi Toushi Series 8.5TR R410A Twin Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-8-5tr-r410a-twin-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-8-5tr-r410a-twin-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 8.5TR R410A Twin Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 8.5TR R410A Twin Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1890,9 +1890,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-8-5tr-r410a-t
 
 #### 9.5.4 Hitachi Toushi Series 11.0TR R410A Single Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-11-0tr-r410a-single-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-single-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-11-0tr-r410a-single-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-single-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 11.0TR R410A Single Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-single-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 11.0TR R410A Single Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-single-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1918,9 +1918,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-11-0tr-r410a-
 
 #### 9.5.5 Hitachi Toushi Series 11.0TR R410A Twin Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-11-0tr-r410a-twin-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-11-0tr-r410a-twin-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 11.0TR R410A Twin Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 11.0TR R410A Twin Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0tr-r410a-twin-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1946,9 +1946,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-11-0tr-r410a-
 
 #### 9.5.6 Hitachi Toushi Series 16.5TR R410A Ceiling Suspended Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-16-5tr-r410a-ceiling-suspended-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-ceiling-suspended-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-16-5tr-r410a-ceiling-suspended-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-ceiling-suspended-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 16.5TR R410A Ceiling Suspended Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-ceiling-suspended-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 16.5TR R410A Ceiling Suspended Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-ceiling-suspended-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -1974,9 +1974,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-16-5tr-r410a-
 
 #### 9.5.7 Hitachi Toushi Series 16.5TR R410A Convertible Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-16-5tr-r410a-convertible-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-convertible-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-16-5tr-r410a-convertible-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-convertible-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 16.5TR R410A Convertible Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-convertible-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 16.5TR R410A Convertible Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5tr-r410a-convertible-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2002,9 +2002,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-16-5tr-r410a-
 
 #### 9.5.8 Hitachi Toushi Series 3 TR R22 Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-3-tr-r22-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-3-tr-r22-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-3-tr-r22-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-3-tr-r22-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 3 TR R22 Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-3-tr-r22-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 3 TR R22 Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-3-tr-r22-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2030,9 +2030,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-3-tr-r22-duct
 
 #### 9.5.9 Hitachi Toushi Series 4 TR R22 Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-4-tr-r22-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-4-tr-r22-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-4-tr-r22-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-4-tr-r22-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 4 TR R22 Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-4-tr-r22-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 4 TR R22 Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-4-tr-r22-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2058,9 +2058,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-4-tr-r22-duct
 
 #### 9.5.10 Hitachi Toushi Series 5 TR R22 Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-5-tr-r22-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-5-tr-r22-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-5-tr-r22-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-5-tr-r22-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 5 TR R22 Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-5-tr-r22-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 5 TR R22 Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-5-tr-r22-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2086,9 +2086,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-5-tr-r22-duct
 
 #### 9.5.11 Hitachi Toushi Series 5.5 TR R22 Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-5-5-tr-r22-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-5-5-tr-r22-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-5-5-tr-r22-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-5-5-tr-r22-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 5.5 TR R22 Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-5-5-tr-r22-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 5.5 TR R22 Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-5-5-tr-r22-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2114,9 +2114,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-5-5-tr-r22-du
 
 #### 9.5.12 Hitachi Toushi Series 7.5 TR R22 Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-7-5-tr-r22-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-7-5-tr-r22-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-7-5-tr-r22-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-7-5-tr-r22-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 7.5 TR R22 Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-7-5-tr-r22-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 7.5 TR R22 Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-7-5-tr-r22-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2142,9 +2142,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-7-5-tr-r22-du
 
 #### 9.5.13 Hitachi Toushi Series 8.5 TR Single Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-8-5-tr-single-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-single-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-8-5-tr-single-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-single-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 8.5 TR Single Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-single-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 8.5 TR Single Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-single-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2170,9 +2170,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-8-5-tr-single
 
 #### 9.5.14 Hitachi Toushi Series 8.5 TR Twin Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-8-5-tr-twin-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-twin-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-8-5-tr-twin-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-twin-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 8.5 TR Twin Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-twin-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 8.5 TR Twin Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-8-5-tr-twin-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2198,9 +2198,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-8-5-tr-twin-c
 
 #### 9.5.15 Hitachi Toushi Series 11.0 TR Single Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-11-0-tr-single-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-single-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-11-0-tr-single-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-single-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 11.0 TR Single Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-single-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 11.0 TR Single Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-single-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2226,9 +2226,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-11-0-tr-singl
 
 #### 9.5.16 Hitachi Toushi Series 11.0 TR Twin Circuit Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-11-0-tr-twin-circuit-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-twin-circuit-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-11-0-tr-twin-circuit-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-twin-circuit-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 11.0 TR Twin Circuit Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-twin-circuit-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 11.0 TR Twin Circuit Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-11-0-tr-twin-circuit-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2254,9 +2254,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-11-0-tr-twin-
 
 #### 9.5.17 Hitachi Toushi Series 16.5 TR R22 Ceiling Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-16-5-tr-r22-ceiling-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-r22-ceiling-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-16-5-tr-r22-ceiling-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-r22-ceiling-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 16.5 TR R22 Ceiling Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-r22-ceiling-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 16.5 TR R22 Ceiling Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-r22-ceiling-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2282,9 +2282,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-16-5-tr-r22-c
 
 #### 9.5.18 Hitachi Toushi Series 16.5 TR Convertible Ductable Air Conditioner
 
-**Images:** [hitachi-toushi-series-16-5-tr-convertible-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-convertible-ductable-air-conditioner.jpg)
+**Images:** [hitachi-toushi-series-16-5-tr-convertible-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-convertible-ductable-air-conditioner.jpg)
 
-![Hitachi Toushi Series 16.5 TR Convertible Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-convertible-ductable-air-conditioner.jpg)
+![Hitachi Toushi Series 16.5 TR Convertible Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-toushi-series-16-5-tr-convertible-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2310,9 +2310,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-toushi-series-16-5-tr-conve
 
 #### 9.5.19 Hitachi Takumi Series 5.5TR Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-5-5tr-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-5-5tr-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-5-5tr-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-5-5tr-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 5.5TR Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-5-5tr-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 5.5TR Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-5-5tr-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2337,9 +2337,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-5-5tr-ductabl
 
 #### 9.5.20 Hitachi Takumi Series 8.5TR 2 Compressor Type Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-8-5tr-2-compressor-type-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-2-compressor-type-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-8-5tr-2-compressor-type-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-2-compressor-type-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 8.5TR 2 Compressor Type Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-2-compressor-type-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 8.5TR 2 Compressor Type Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-2-compressor-type-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2365,9 +2365,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-8-5tr-2-compr
 
 #### 9.5.21 Hitachi Takumi Series 11TR 2 Compressor Type Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-11tr-2-compressor-type-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-2-compressor-type-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-11tr-2-compressor-type-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-2-compressor-type-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 11TR 2 Compressor Type Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-2-compressor-type-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 11TR 2 Compressor Type Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-2-compressor-type-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2410,9 +2410,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-11tr-2-compre
 
 #### 9.5.22 Hitachi Takumi Series 11TR Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-11tr-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-11tr-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 11TR Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 11TR Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-11tr-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2438,9 +2438,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-11tr-ductable
 
 #### 9.5.23 Hitachi Takumi Series 8.5TR Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-8-5tr-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-8-5tr-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 8.5TR Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 8.5TR Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-8-5tr-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2465,9 +2465,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-8-5tr-ductabl
 
 #### 9.5.24 Hitachi Takumi Series 16.5TR Convertible Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-16-5tr-convertible-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-convertible-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-16-5tr-convertible-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-convertible-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 16.5TR Convertible Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-convertible-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 16.5TR Convertible Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-convertible-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2491,9 +2491,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-16-5tr-conver
 
 #### 9.5.25 Hitachi Takumi Series 16.5TR Ceiling Ductable Air Conditioner
 
-**Images:** [hitachi-takumi-series-16-5tr-ceiling-ductable-air-conditioner.jpg](images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-ceiling-ductable-air-conditioner.jpg)
+**Images:** [hitachi-takumi-series-16-5tr-ceiling-ductable-air-conditioner.jpg](../images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-ceiling-ductable-air-conditioner.jpg)
 
-![Hitachi Takumi Series 16.5TR Ceiling Ductable Air Conditioner](images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-ceiling-ductable-air-conditioner.jpg)
+![Hitachi Takumi Series 16.5TR Ceiling Ductable Air Conditioner](../images/products/ductable-air-conditioners/hitachi-takumi-series-16-5tr-ceiling-ductable-air-conditioner.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2531,9 +2531,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-takumi-series-16-5tr-ceilin
 
 #### 9.6.1 Hitachi DXF 2.0A VRF AHU Kit
 
-**Images:** [hitachi-dxf-2-0a-vrf-ahu-kit.jpg](images/products/vrf-systems/hitachi-dxf-2-0a-vrf-ahu-kit.jpg) · [hitachi-dxf-2-0a-vrf-ahu-kit-2.jpg](images/products/vrf-systems/hitachi-dxf-2-0a-vrf-ahu-kit-2.jpg)
+**Images:** [hitachi-dxf-2-0a-vrf-ahu-kit.jpg](../images/products/vrf-systems/hitachi-dxf-2-0a-vrf-ahu-kit.jpg) · [hitachi-dxf-2-0a-vrf-ahu-kit-2.jpg](../images/products/vrf-systems/hitachi-dxf-2-0a-vrf-ahu-kit-2.jpg)
 
-![Hitachi DXF 2.0A VRF AHU Kit](images/products/vrf-systems/hitachi-dxf-2-0a-vrf-ahu-kit.jpg)
+![Hitachi DXF 2.0A VRF AHU Kit](../images/products/vrf-systems/hitachi-dxf-2-0a-vrf-ahu-kit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2557,9 +2557,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-dxf-2-0a-vrf-ahu-kit-209944
 
 #### 9.6.2 Hitachi EZ PSC-A64GT Centralized AC Control Station
 
-**Images:** [hitachi-ez-psc-a64gt-centralized-ac-control-station.jpg](images/products/vrf-systems/hitachi-ez-psc-a64gt-centralized-ac-control-station.jpg)
+**Images:** [hitachi-ez-psc-a64gt-centralized-ac-control-station.jpg](../images/products/vrf-systems/hitachi-ez-psc-a64gt-centralized-ac-control-station.jpg)
 
-![Hitachi EZ PSC-A64GT Centralized AC Control Station](images/products/vrf-systems/hitachi-ez-psc-a64gt-centralized-ac-control-station.jpg)
+![Hitachi EZ PSC-A64GT Centralized AC Control Station](../images/products/vrf-systems/hitachi-ez-psc-a64gt-centralized-ac-control-station.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2585,9 +2585,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-ez-psc-a64gt-centralized-ac
 
 #### 9.6.3 Hitachi PSC-AD128EX Centralized AC Control Station
 
-**Images:** [hitachi-psc-ad128ex-centralized-ac-control-station.jpg](images/products/vrf-systems/hitachi-psc-ad128ex-centralized-ac-control-station.jpg)
+**Images:** [hitachi-psc-ad128ex-centralized-ac-control-station.jpg](../images/products/vrf-systems/hitachi-psc-ad128ex-centralized-ac-control-station.jpg)
 
-![Hitachi PSC-AD128EX Centralized AC Control Station](images/products/vrf-systems/hitachi-psc-ad128ex-centralized-ac-control-station.jpg)
+![Hitachi PSC-AD128EX Centralized AC Control Station](../images/products/vrf-systems/hitachi-psc-ad128ex-centralized-ac-control-station.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2613,9 +2613,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-psc-ad128ex-centralized-ac-
 
 #### 9.6.4 Hitachi RPK-1.0FSNK2 Wall Type Indoor VRF Unit
 
-**Images:** [hitachi-rpk-1-0fsnk2-wall-type-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rpk-1-0fsnk2-wall-type-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rpk-1-0fsnk2-wall-type-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rpk-1-0fsnk2-wall-type-indoor-vrf-unit.jpg)
 
-![Hitachi RPK-1.0FSNK2 Wall Type Indoor VRF Unit](images/products/vrf-systems/hitachi-rpk-1-0fsnk2-wall-type-indoor-vrf-unit.jpg)
+![Hitachi RPK-1.0FSNK2 Wall Type Indoor VRF Unit](../images/products/vrf-systems/hitachi-rpk-1-0fsnk2-wall-type-indoor-vrf-unit.jpg)
 
 **Video:** https://www.youtube.com/watch?v=hngpuQiMiiY
 
@@ -2642,9 +2642,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rpk-1-0fsnk2-wall-type-indo
 
 #### 9.6.5 Hitachi Set Free Sigma RAS-8.0HNBCMQ1 8 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-8-0hnbcmq1-8-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-8-0hnbcmq1-8-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-8-0hnbcmq1-8-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-8-0hnbcmq1-8-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-8.0HNBCMQ1 8 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-8-0hnbcmq1-8-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-8.0HNBCMQ1 8 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-8-0hnbcmq1-8-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2677,9 +2677,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-8-0hnbcm
 
 #### 9.6.6 Hitachi Set Free Sigma RAS-10 HNBCMQ1 10 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-10-hnbcmq1-10-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-10-hnbcmq1-10-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-10-hnbcmq1-10-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-10-hnbcmq1-10-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-10 HNBCMQ1 10 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-10-hnbcmq1-10-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-10 HNBCMQ1 10 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-10-hnbcmq1-10-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2712,9 +2712,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-10-hnbcm
 
 #### 9.6.7 Hitachi Set Free Sigma RAS-12 HNBCMQ1 12 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-12-hnbcmq1-12-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-12-hnbcmq1-12-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-12-hnbcmq1-12-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-12-hnbcmq1-12-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-12 HNBCMQ1 12 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-12-hnbcmq1-12-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-12 HNBCMQ1 12 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-12-hnbcmq1-12-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2747,9 +2747,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-12-hnbcm
 
 #### 9.6.8 Hitachi Set Free Sigma RAS-14HNBCMQ1 14 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-14hnbcmq1-14-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-14hnbcmq1-14-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-14hnbcmq1-14-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-14hnbcmq1-14-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-14HNBCMQ1 14 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-14hnbcmq1-14-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-14HNBCMQ1 14 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-14hnbcmq1-14-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2782,9 +2782,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-14hnbcmq
 
 #### 9.6.9 Hitachi Set Free Sigma RAS-16HNBCMQ1 16 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-16hnbcmq1-16-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-16hnbcmq1-16-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-16hnbcmq1-16-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-16hnbcmq1-16-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-16HNBCMQ1 16 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-16hnbcmq1-16-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-16HNBCMQ1 16 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-16hnbcmq1-16-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2817,9 +2817,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-16hnbcmq
 
 #### 9.6.10 Hitachi Set Free Sigma RAS-18HNBCMQ1 18 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-18hnbcmq1-18-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-18hnbcmq1-18-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-18hnbcmq1-18-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-18hnbcmq1-18-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-18HNBCMQ1 18 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-18hnbcmq1-18-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-18HNBCMQ1 18 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-18hnbcmq1-18-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2852,9 +2852,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-18hnbcmq
 
 #### 9.6.11 Hitachi Set Free Sigma RAS-20HNBCMQ1 20 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-20hnbcmq1-20-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-20hnbcmq1-20-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-20hnbcmq1-20-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-20hnbcmq1-20-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-20HNBCMQ1 20 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-20hnbcmq1-20-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-20HNBCMQ1 20 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-20hnbcmq1-20-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2889,9 +2889,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-20hnbcmq
 
 #### 9.6.12 Hitachi Set Free Sigma RAS-22HNBCMQ1 22 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-22hnbcmq1-22-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-22hnbcmq1-22-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-22hnbcmq1-22-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-22hnbcmq1-22-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-22HNBCMQ1 22 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-22hnbcmq1-22-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-22HNBCMQ1 22 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-22hnbcmq1-22-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2924,9 +2924,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-22hnbcmq
 
 #### 9.6.13 Hitachi Set Free Sigma RAS-24HNBCMQ1 24 HP VRF System
 
-**Images:** [hitachi-set-free-sigma-ras-24hnbcmq1-24-hp-vrf-system.jpg](images/products/vrf-systems/hitachi-set-free-sigma-ras-24hnbcmq1-24-hp-vrf-system.jpg)
+**Images:** [hitachi-set-free-sigma-ras-24hnbcmq1-24-hp-vrf-system.jpg](../images/products/vrf-systems/hitachi-set-free-sigma-ras-24hnbcmq1-24-hp-vrf-system.jpg)
 
-![Hitachi Set Free Sigma RAS-24HNBCMQ1 24 HP VRF System](images/products/vrf-systems/hitachi-set-free-sigma-ras-24hnbcmq1-24-hp-vrf-system.jpg)
+![Hitachi Set Free Sigma RAS-24HNBCMQ1 24 HP VRF System](../images/products/vrf-systems/hitachi-set-free-sigma-ras-24hnbcmq1-24-hp-vrf-system.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2959,9 +2959,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-set-free-sigma-ras-24hnbcmq
 
 #### 9.6.14 Hitachi RPIZ-1.0FSN1Q Low Height Indoor VRF Unit
 
-**Images:** [hitachi-rpiz-1-0fsn1q-low-height-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rpiz-1-0fsn1q-low-height-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rpiz-1-0fsn1q-low-height-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rpiz-1-0fsn1q-low-height-indoor-vrf-unit.jpg)
 
-![Hitachi RPIZ-1.0FSN1Q Low Height Indoor VRF Unit](images/products/vrf-systems/hitachi-rpiz-1-0fsn1q-low-height-indoor-vrf-unit.jpg)
+![Hitachi RPIZ-1.0FSN1Q Low Height Indoor VRF Unit](../images/products/vrf-systems/hitachi-rpiz-1-0fsn1q-low-height-indoor-vrf-unit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -2985,9 +2985,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rpiz-1-0fsn1q-low-height-in
 
 #### 9.6.15 Hitachi RPI1.0FSNK1 High Air Quantity Ceiling Type Indoor VRF Unit
 
-**Images:** [hitachi-rpi1-0fsnk1-high-air-quantity-ceiling-type-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rpi1-0fsnk1-high-air-quantity-ceiling-type-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rpi1-0fsnk1-high-air-quantity-ceiling-type-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rpi1-0fsnk1-high-air-quantity-ceiling-type-indoor-vrf-unit.jpg)
 
-![Hitachi RPI1.0FSNK1 High Air Quantity Ceiling Type Indoor VRF Unit](images/products/vrf-systems/hitachi-rpi1-0fsnk1-high-air-quantity-ceiling-type-indoor-vrf-unit.jpg)
+![Hitachi RPI1.0FSNK1 High Air Quantity Ceiling Type Indoor VRF Unit](../images/products/vrf-systems/hitachi-rpi1-0fsnk1-high-air-quantity-ceiling-type-indoor-vrf-unit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3012,9 +3012,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rpi1-0fsnk1-high-air-quanti
 
 #### 9.6.16 Hitachi RCS-0.8FSN 1 Way Cassette Type Indoor VRF Unit
 
-**Images:** [hitachi-rcs-0-8fsn-1-way-cassette-type-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rcs-0-8fsn-1-way-cassette-type-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rcs-0-8fsn-1-way-cassette-type-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rcs-0-8fsn-1-way-cassette-type-indoor-vrf-unit.jpg)
 
-![Hitachi RCS-0.8FSN 1 Way Cassette Type Indoor VRF Unit](images/products/vrf-systems/hitachi-rcs-0-8fsn-1-way-cassette-type-indoor-vrf-unit.jpg)
+![Hitachi RCS-0.8FSN 1 Way Cassette Type Indoor VRF Unit](../images/products/vrf-systems/hitachi-rcs-0-8fsn-1-way-cassette-type-indoor-vrf-unit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3039,9 +3039,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rcs-0-8fsn-1-way-cassette-t
 
 #### 9.6.17 Hitachi RCD-0.8FSN3 2 Way Cassette Type Indoor VRF Unit
 
-**Images:** [hitachi-rcd-0-8fsn3-2-way-cassette-type-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rcd-0-8fsn3-2-way-cassette-type-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rcd-0-8fsn3-2-way-cassette-type-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rcd-0-8fsn3-2-way-cassette-type-indoor-vrf-unit.jpg)
 
-![Hitachi RCD-0.8FSN3 2 Way Cassette Type Indoor VRF Unit](images/products/vrf-systems/hitachi-rcd-0-8fsn3-2-way-cassette-type-indoor-vrf-unit.jpg)
+![Hitachi RCD-0.8FSN3 2 Way Cassette Type Indoor VRF Unit](../images/products/vrf-systems/hitachi-rcd-0-8fsn3-2-way-cassette-type-indoor-vrf-unit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3066,9 +3066,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rcd-0-8fsn3-2-way-cassette-
 
 #### 9.6.18 Hitachi RCI-1.0FSKDNQ 4 Way Cassette Type Indoor VRF Unit
 
-**Images:** [hitachi-rci-1-0fskdnq-4-way-cassette-type-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rci-1-0fskdnq-4-way-cassette-type-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rci-1-0fskdnq-4-way-cassette-type-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rci-1-0fskdnq-4-way-cassette-type-indoor-vrf-unit.jpg)
 
-![Hitachi RCI-1.0FSKDNQ 4 Way Cassette Type Indoor VRF Unit](images/products/vrf-systems/hitachi-rci-1-0fskdnq-4-way-cassette-type-indoor-vrf-unit.jpg)
+![Hitachi RCI-1.0FSKDNQ 4 Way Cassette Type Indoor VRF Unit](../images/products/vrf-systems/hitachi-rci-1-0fskdnq-4-way-cassette-type-indoor-vrf-unit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3092,9 +3092,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rci-1-0fskdnq-4-way-cassett
 
 #### 9.6.19 Hitachi RCIM-1.0FSN4 4 Way Cassette Compact Type Indoor VRF Unit
 
-**Images:** [hitachi-rcim-1-0fsn4-4-way-cassette-compact-type-indoor-vrf-unit.jpg](images/products/vrf-systems/hitachi-rcim-1-0fsn4-4-way-cassette-compact-type-indoor-vrf-unit.jpg)
+**Images:** [hitachi-rcim-1-0fsn4-4-way-cassette-compact-type-indoor-vrf-unit.jpg](../images/products/vrf-systems/hitachi-rcim-1-0fsn4-4-way-cassette-compact-type-indoor-vrf-unit.jpg)
 
-![Hitachi RCIM-1.0FSN4 4 Way Cassette Compact Type Indoor VRF Unit](images/products/vrf-systems/hitachi-rcim-1-0fsn4-4-way-cassette-compact-type-indoor-vrf-unit.jpg)
+![Hitachi RCIM-1.0FSN4 4 Way Cassette Compact Type Indoor VRF Unit](../images/products/vrf-systems/hitachi-rcim-1-0fsn4-4-way-cassette-compact-type-indoor-vrf-unit.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3121,9 +3121,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-rcim-1-0fsn4-4-way-cassette
 
 #### 9.6.20 Hitachi PC-ARF1 Advanced Wired Remote Controller
 
-**Images:** [hitachi-pc-arf1-advanced-wired-remote-controller.jpg](images/products/vrf-systems/hitachi-pc-arf1-advanced-wired-remote-controller.jpg)
+**Images:** [hitachi-pc-arf1-advanced-wired-remote-controller.jpg](../images/products/vrf-systems/hitachi-pc-arf1-advanced-wired-remote-controller.jpg)
 
-![Hitachi PC-ARF1 Advanced Wired Remote Controller](images/products/vrf-systems/hitachi-pc-arf1-advanced-wired-remote-controller.jpg)
+![Hitachi PC-ARF1 Advanced Wired Remote Controller](../images/products/vrf-systems/hitachi-pc-arf1-advanced-wired-remote-controller.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3146,9 +3146,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-pc-arf1-advanced-wired-remo
 
 #### 9.6.21 Hitachi HCWA10NEGQ Advanced Wired Remote Controller
 
-**Images:** [hitachi-hcwa10negq-advanced-wired-remote-controller.jpg](images/products/vrf-systems/hitachi-hcwa10negq-advanced-wired-remote-controller.jpg)
+**Images:** [hitachi-hcwa10negq-advanced-wired-remote-controller.jpg](../images/products/vrf-systems/hitachi-hcwa10negq-advanced-wired-remote-controller.jpg)
 
-![Hitachi HCWA10NEGQ Advanced Wired Remote Controller](images/products/vrf-systems/hitachi-hcwa10negq-advanced-wired-remote-controller.jpg)
+![Hitachi HCWA10NEGQ Advanced Wired Remote Controller](../images/products/vrf-systems/hitachi-hcwa10negq-advanced-wired-remote-controller.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3173,9 +3173,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-hcwa10negq-advanced-wired-r
 
 #### 9.7.1 Hitachi Air Cooled Screw Chillers
 
-**Images:** [hitachi-air-cooled-screw-chillers.jpg](images/products/hitachi-chillers/hitachi-air-cooled-screw-chillers.jpg)
+**Images:** [hitachi-air-cooled-screw-chillers.jpg](../images/products/hitachi-chillers/hitachi-air-cooled-screw-chillers.jpg)
 
-![Hitachi Air Cooled Screw Chillers](images/products/hitachi-chillers/hitachi-air-cooled-screw-chillers.jpg)
+![Hitachi Air Cooled Screw Chillers](../images/products/hitachi-chillers/hitachi-air-cooled-screw-chillers.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3198,9 +3198,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-air-cooled-screw-chillers-2
 
 #### 9.7.2 Hitachi Water Cooled Screw Chillers
 
-**Images:** [hitachi-water-cooled-screw-chillers.jpg](images/products/hitachi-chillers/hitachi-water-cooled-screw-chillers.jpg)
+**Images:** [hitachi-water-cooled-screw-chillers.jpg](../images/products/hitachi-chillers/hitachi-water-cooled-screw-chillers.jpg)
 
-![Hitachi Water Cooled Screw Chillers](images/products/hitachi-chillers/hitachi-water-cooled-screw-chillers.jpg)
+![Hitachi Water Cooled Screw Chillers](../images/products/hitachi-chillers/hitachi-water-cooled-screw-chillers.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
@@ -3223,9 +3223,9 @@ Source: https://www.indiamart.com/proddetail/hitachi-water-cooled-screw-chillers
 
 #### 9.7.3 Hitachi Direct Drive Centrifugal Chiller
 
-**Images:** [hitachi-direct-drive-centrifugal-chiller.jpg](images/products/hitachi-chillers/hitachi-direct-drive-centrifugal-chiller.jpg)
+**Images:** [hitachi-direct-drive-centrifugal-chiller.jpg](../images/products/hitachi-chillers/hitachi-direct-drive-centrifugal-chiller.jpg)
 
-![Hitachi Direct Drive Centrifugal Chiller](images/products/hitachi-chillers/hitachi-direct-drive-centrifugal-chiller.jpg)
+![Hitachi Direct Drive Centrifugal Chiller](../images/products/hitachi-chillers/hitachi-direct-drive-centrifugal-chiller.jpg)
 
 **Price:** `[PLACEHOLDER]` (price on request)
 
