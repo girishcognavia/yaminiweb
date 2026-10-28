@@ -8,6 +8,60 @@
 1. IndiaMART: https://www.indiamart.com/yamini-enterprises-jodhpur/ (profile, products, photos, videos, reviews)
 2. Helplinesearch: https://helplinesearch.com/yamini-enterprises-hitachi-studio.html (contact details, address, store photos)
 
+---
+
+## 0. Client-provided information (received 28 Oct 2026): source of truth
+
+> Supplied directly by Yamini Enterprises. Where it differs from the scraped data in sections 1–9, **this section wins**. The website was updated to use it, and invented or sample content was removed.
+
+| Field | Value |
+|---|---|
+| Company / brand name | **Yamini Enterprises** |
+| Short description | Exclusive Dealers and Service Providers For HITACHI HVAC SOLUTIONS By BOSCH Home Comfort Group in Jodhpur |
+| Industry | Heating, Ventilation, and Air Conditioning (HVAC) |
+| Business category | HVAC Equipment Supplier, Air Conditioning Systems Dealer & Service Provider |
+| Established | 2009 |
+| Service area | Primarily Jodhpur, with project operations extending across Rajasthan |
+| Locations / offices | `[PLACEHOLDER]` (not provided; website uses the Ratanada, Jodhpur address) |
+
+**Company overview (About page)**
+> Established in 2009, Yamini Enterprises specializes in Hitachi HVAC products and services, primarily serving Jodhpur, with project operations extending across Rajasthan. We are committed to providing reliable air-conditioning solutions for a wide range of applications.
+
+**History / milestones**
+- **2009, Establishment:** Started operations in Jodhpur.
+- **Business expansion:** Expanded HVAC operations beyond Jodhpur to projects across Rajasthan.
+
+**Target audience**
+> We serve a diverse range of customers, from homeowners requiring air-conditioning for a single room to large-scale projects involving hotels, resorts, hospitals, commercial buildings, offices, and industrial facilities. Our solutions cater to residential, commercial, and institutional requirements of all sizes.
+
+**Leadership (received 28 Oct 2026)**
+- **Mr. Pradeep Sharma**, Founder & Proprietor (approved name; IndiaMART listed "Pradeep Kumar Sharma")
+- Retired Indian Air Force serviceman, with experience teaching military students
+- Bio (used on the About page):
+  > In 2009, Mr. Pradeep Sharma identified a growing need for reliable HVAC products and professional air-conditioning services in Jodhpur, leading him to establish Yamini Enterprises with a vision to address this gap.
+  >
+  > A retired Indian Air Force serviceman with experience in teaching military students, Mr. Sharma brings a background shaped by discipline, knowledge, and a strong interest in technical fields. His curiosity about technologies that play an essential role in everyday life, combined with his recognition of the growing need for dependable air-conditioning solutions, helped lay the foundation for Yamini Enterprises.
+  >
+  > His vision continues to guide the firm's commitment to providing reliable HVAC products and solutions to customers across Jodhpur and Rajasthan.
+- Photo: `[PLACEHOLDER]` (none provided yet; About page shows the company emblem)
+
+**Letterhead details (received 28 Oct 2026)**
+
+| Field | Value |
+|---|---|
+| Authorisation | AUTHORISED SALE & SERVICE DEALER : HITACHI AIR CONDITIONERS |
+| Certification | AN ISO 9002 CERTIFIED COMPANY |
+| Address | **134, R.K. Nagar, Opp. B.R. Birla Public School, Jodhpur - 342008** (replaces the old Ratanada / Old Loco Shed Road address) |
+| Mobile | **09414100877, 6375775857** |
+| GSTN | 08BCRPS3912F1ZA |
+| Footer partner logo | `images/company logo/Bosch Logo with Hitachi Tagline.png` (web copy: `images/brand/bosch-hitachi.png`) |
+
+**Superseded scraped data (no longer used on the website):** the Ratanada / Old Loco Shed Road / Anand Mangal Building address (PIN 342001), the landlines 0291-2610808 and 0291-2634372, storefront photos of the "Hitachi Studio" sign (old listing), "Authorised Hitachi channel partner" wording, the name "Pradeep Kumar Sharma", the IndiaMART founder blurb, IndiaMART "enormous name of the industry" About text, IndiaMART "Why Us" list, team size, IndiaMART rating.
+
+**Still to collect:** business hours, exact map pin, office locations, social links, real testimonials, project photos and details, AMC plans and prices, EMI/finance offers, owner photo.
+
+---
+
 > Note: most of the Helplinesearch page is template filler ("Digital Event In City Hall", New York, "Lorem ipsum" speakers, a map pin in New York). That content is **not** about this company and has been ignored. Only the "Detail" block and the 4 listing photos are real.
 
 ---

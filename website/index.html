@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yamini Enterprises | Authorised Hitachi AC Dealer in Jodhpur</title>
-  <meta name="description" content="Yamini Enterprises (Hitachi Studio), Ratanada, Jodhpur: authorised Hitachi channel partner since 2009 for split, window, cassette, ductable, VRF ACs and chillers, with installation and AMC service.">
+  <title>Yamini Enterprises | Exclusive Hitachi HVAC Dealer &amp; Service Provider, Jodhpur</title>
+  <meta name="description" content="Yamini Enterprises, Jodhpur: exclusive dealers and service providers for Hitachi HVAC Solutions by Bosch Home Comfort Group since 2009, serving homes, hotels, hospitals, offices and industry across Rajasthan.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -23,47 +23,40 @@
           <path d="M-20 480 C 240 420, 420 540, 640 470 S 1020 390, 1220 440" opacity=".2"/>
         </g>
       </svg>
-      <div class="container">
-        <div>
-          <span class="eyebrow">Authorised Hitachi Channel Partner · Jodhpur</span>
-          <h1>Hitachi cooling, engineered for <span class="rotator" id="rotator"><span>your home.</span></span></h1>
-          <p class="hero-lead">Since 2009, Yamini Enterprises has supplied, installed and serviced Hitachi air conditioning across Jodhpur, from a 1-ton split AC to complete VRF systems and chiller plants.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="contact.html#enquiry">Get a Free Quote</a>
-            <a class="btn btn-ghost" href="products.html">Explore Products</a>
-          </div>
-          <div class="hero-trust">
-            <span class="chip" data-icon="checkCircle">Since 2009</span>
-            <span class="chip" data-icon="checkCircle">GST verified</span>
-            <span class="chip" data-icon="checkCircle">Own warehouse stock</span>
-            <span class="chip" data-icon="checkCircle">Installation &amp; AMC</span>
-          </div>
-        </div>
-
-        <div class="showcase">
-          <div class="showcase-card">
-            <div class="showcase-stage" id="showcaseStage"></div>
-            <div class="showcase-meta">
-              <div><small id="showcaseCat"></small><strong id="showcaseName"></strong></div>
-              <div class="showcase-dots" id="showcaseDots"></div>
+      <div class="container hero-grid">
+        <!-- Left: message (Adaline pill + agency split layout) -->
+        <div class="hero-copy">
+          <div>
+            <a class="hero-pill" href="about.html"><span class="hero-pill-dot"></span><span>Exclusive Hitachi HVAC Dealer<span class="hide-sm"> · Jodhpur</span></span><span data-icon="arrow"></span></a>
+            <h1>Hitachi cooling, engineered for <span class="rotator" id="rotator"><span>your home.</span></span></h1>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="contact.html#enquiry">Get a Free Quote</a>
+              <a class="btn btn-ghost" href="products.html">Explore Products</a>
             </div>
           </div>
-          <div class="float-badge float-badge--tl"><span class="ico" data-icon="award"></span><span><b>Hitachi</b>Channel partner</span></div>
-          <div class="float-badge float-badge--br"><span class="ico" data-icon="grid"></span><span><b>100+ models</b>Home to industrial</span></div>
+          <div class="hero-notes">
+            <p>Exclusive dealers and service providers for Hitachi HVAC Solutions by Bosch Home Comfort Group. Serving Jodhpur since 2009, with projects across Rajasthan.</p>
+            <a class="hero-scroll" href="#categories" aria-label="Scroll to the product range"><span class="hero-scroll-ring"><span data-icon="arrow"></span></span>Scroll to explore</a>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- STATS -->
-    <section class="stats">
-      <div class="container">
-        <div class="stats-grid reveal">
-          <div class="stat"><b data-count="years" data-suffix="+"></b><span>Years serving Jodhpur</span></div>
-          <div class="stat"><b data-count="100" data-suffix="+"></b><span>Hitachi models available</span></div>
-          <div class="stat"><b data-count="7"></b><span>Product categories</span></div>
-          <div class="stat"><b><span class="ph-text">[No.]</span></b><span>Installations completed</span></div>
+        <span class="hero-divider" aria-hidden="true"></span>
+
+        <!-- Right: interactive 3D AC + airflow (hero-3d.js); 2D vortex canvas is the fallback -->
+        <div class="hero-visual" aria-hidden="true">
+          <span class="hero-meta hero-meta--tl">( Est. 2009 )</span>
+          <div class="vortex">
+            <span class="vortex-glow"></span>
+            <canvas class="vortex-canvas" id="vortex"></canvas>
+            <span class="vortex-core"><span class="vortex-core-inner"></span></span>
+          </div>
+          <span class="hero-hint"><span class="hero-hint-dot"></span><span id="heroHint">Cool air, aimed where you need it</span></span>
+          <span class="hero-meta hero-meta--br">( R.K. Nagar, Jodhpur )</span>
         </div>
       </div>
+
+      <!-- Bottom strip: product range ticker (Adaline "trusted by" row) -->
+      <div class="hero-ticker" id="heroTicker"></div>
     </section>
 
     <!-- STATEMENT (Mitsubishi Electric "Better begins here.") -->
@@ -71,7 +64,7 @@
       <div class="container statement reveal">
         <h2>Better air<br><span>begins here.</span></h2>
         <div>
-          <p>Hitachi's complete range under one roof: VRF systems, ductable and light commercial ACs, chillers, inverter and fixed-speed splits and window ACs. Each one is chosen to match the space, the load and your budget.</p>
+          <p>Reliable air-conditioning for every application, from a single room at home to hotels, resorts, hospitals, commercial buildings and industrial facilities. One Hitachi range, matched to residential, commercial and institutional requirements of all sizes.</p>
           <a class="link-arrow" href="about.html">Our story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
@@ -84,7 +77,7 @@
           <div>
             <span class="eyebrow">Product range</span>
             <h2>Every kind of cooling, one trusted brand</h2>
-            <p>From a single bedroom to a hospital campus, explore the Hitachi systems we supply and install.</p>
+            <p>From a single room to large-scale projects, explore the Hitachi HVAC systems we supply and service.</p>
           </div>
           <a class="btn btn-outline" href="products.html">View all products</a>
         </div>
@@ -97,9 +90,9 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="eyebrow">Solutions by space</span>
-            <h2>The right system for where it really matters</h2>
-            <p>Tell us the space and we'll recommend the system. Here's where to start.</p>
+            <span class="eyebrow">Who we serve</span>
+            <h2>Residential, commercial and institutional</h2>
+            <p>Solutions for requirements of every size. Choose your space to see where to start.</p>
           </div>
         </div>
         <div class="spaces reveal" id="spaces"></div>
@@ -110,21 +103,21 @@
     <section class="section">
       <div class="container why">
         <div class="why-media reveal">
-          <img class="main" data-src="helplinesearch/helplinesearch-2.jpg" alt="Inside the Yamini Enterprises Hitachi Studio showroom">
-          <img class="inset" data-src="gallery/company-signboard-2.png" alt="Hitachi Studio storefront">
+          <img class="main" data-src="helplinesearch/helplinesearch-2.jpg" alt="Hitachi air conditioners on display at Yamini Enterprises">
+          <img class="inset" data-src="gallery/showroom-3.png" alt="Our team at the Hitachi counter">
           <div class="since"><b data-bind="years"></b><span>years of trust</span></div>
         </div>
         <div class="reveal">
           <span class="eyebrow">Why Yamini Enterprises</span>
           <h2>A long-term partner, not a one-time sale</h2>
-          <p style="color:var(--muted)">We focus on product quality and long-term relationships with our customers. Under the direction of our founder, Mr. Pradeep Sharma, we've built a loyal customer base across Jodhpur.</p>
+          <p style="color:var(--muted)">Since 2009 we have specialised in Hitachi HVAC products and services, serving Jodhpur and taking on projects across Rajasthan. Under the direction of our founder, Mr. Pradeep Sharma, we focus on reliable solutions and long-term relationships.</p>
           <div class="why-list">
-            <div class="why-item"><span class="ico" data-icon="truck"></span><div><strong>Timely delivery</strong><span>Stock moves fast from our own depot.</span></div></div>
-            <div class="why-item"><span class="ico" data-icon="warehouse"></span><div><strong>Capacious warehouse</strong><span>Popular models ready to install.</span></div></div>
-            <div class="why-item"><span class="ico" data-icon="scale"></span><div><strong>Ethical business</strong><span>Transparent quotes, GST invoices.</span></div></div>
-            <div class="why-item"><span class="ico" data-icon="grid"></span><div><strong>Unmatched range</strong><span>100+ Hitachi models across 7 categories.</span></div></div>
-            <div class="why-item"><span class="ico" data-icon="rupee"></span><div><strong>Cost-effective</strong><span>Wholesale pricing, right-sized systems.</span></div></div>
-            <div class="why-item"><span class="ico" data-icon="award"></span><div><strong>Authorised partner</strong><span>Genuine Hitachi products and support.</span></div></div>
+            <div class="why-item"><span class="ico" data-icon="award"></span><div><strong>Exclusive Hitachi dealer</strong><span>Hitachi HVAC Solutions by Bosch Home Comfort Group.</span></div></div>
+            <div class="why-item"><span class="ico" data-icon="wrench"></span><div><strong>Authorised sale &amp; service</strong><span>Authorised dealer for Hitachi air conditioners.</span></div></div>
+            <div class="why-item"><span class="ico" data-icon="shield"></span><div><strong>ISO 9002 certified</strong><span>An ISO 9002 certified company.</span></div></div>
+            <div class="why-item"><span class="ico" data-icon="pin"></span><div><strong>Across Rajasthan</strong><span>Based in Jodhpur, with projects statewide.</span></div></div>
+            <div class="why-item"><span class="ico" data-icon="grid"></span><div><strong>Complete range</strong><span>Splits and window ACs to VRF and chillers.</span></div></div>
+            <div class="why-item"><span class="ico" data-icon="users"></span><div><strong>Any project size</strong><span>From one room to hotels and hospitals.</span></div></div>
           </div>
         </div>
       </div>
@@ -164,32 +157,14 @@
       </div>
     </section>
 
-    <!-- PROJECTS (Renovac portfolio): placeholders -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">Recent installations</span>
-            <h2>Projects across Jodhpur</h2>
-            <p>A selection of homes, businesses and institutions we've cooled.</p>
-          </div>
-        </div>
-        <div class="grid-3">
-          <article class="project-card reveal"><div class="ph" data-ph="Project photo" data-hint="1200×750 · residential install"></div><div class="body"><span class="tag">Residential · Inverter split</span><h3><span class="ph-text">[Project name]</span></h3><p><span class="ph-text">[One-line summary: location, units, tonnage]</span></p></div></article>
-          <article class="project-card reveal"><div class="ph" data-ph="Project photo" data-hint="1200×750 · commercial VRF"></div><div class="body"><span class="tag">Commercial · VRF</span><h3><span class="ph-text">[Project name]</span></h3><p><span class="ph-text">[One-line summary: location, units, tonnage]</span></p></div></article>
-          <article class="project-card reveal"><div class="ph" data-ph="Project photo" data-hint="1200×750 · hotel / hospital"></div><div class="body"><span class="tag">Hospitality · Ductable</span><h3><span class="ph-text">[Project name]</span></h3><p><span class="ph-text">[One-line summary: location, units, tonnage]</span></p></div></article>
-        </div>
-      </div>
-    </section>
-
     <!-- SHOWROOM GALLERY (Mitsubishi tile grid), real store photos -->
     <section class="section section--soft">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="eyebrow">Visit the Hitachi Studio</span>
+            <span class="eyebrow">Our showroom</span>
             <h2>See it, feel it, then decide</h2>
-            <p>Compare live models side by side at our showroom on Old Loco Shed Road, Ratanada.</p>
+            <p>See and compare Hitachi models side by side. Visit us at R.K. Nagar, opposite B.R. Birla Public School.</p>
           </div>
           <a class="btn btn-outline" href="about.html#gallery">Full gallery</a>
         </div>
@@ -197,40 +172,18 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS + CLIENT LOGOS (Renovac): placeholders -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head center reveal">
-          <div>
-            <span class="eyebrow">Customer stories</span>
-            <h2>Trusted by homes and businesses</h2>
-          </div>
-        </div>
-        <div class="grid-3">
-          <figure class="quote-card reveal" style="margin:0"><span class="mark">“</span><blockquote><span class="ph-text">[Customer testimonial: 2–3 sentences about product, installation and service]</span></blockquote><figcaption class="quote-who"><span class="avatar">?</span><span><strong><span class="ph-text">[Customer name]</span></strong><small><span class="ph-text">[Area / Company]</span></small></span></figcaption></figure>
-          <figure class="quote-card reveal" style="margin:0"><span class="mark">“</span><blockquote><span class="ph-text">[Customer testimonial: 2–3 sentences about product, installation and service]</span></blockquote><figcaption class="quote-who"><span class="avatar">?</span><span><strong><span class="ph-text">[Customer name]</span></strong><small><span class="ph-text">[Area / Company]</span></small></span></figcaption></figure>
-          <figure class="quote-card reveal" style="margin:0"><span class="mark">“</span><blockquote><span class="ph-text">[Customer testimonial: 2–3 sentences about product, installation and service]</span></blockquote><figcaption class="quote-who"><span class="avatar">?</span><span><strong><span class="ph-text">[Customer name]</span></strong><small><span class="ph-text">[Area / Company]</span></small></span></figcaption></figure>
-        </div>
-        <p class="center reveal" style="margin:56px 0 18px;color:var(--muted);font-weight:600">Businesses that trust us</p>
-        <div class="logo-strip reveal">
-          <div class="ph" data-ph="Client logo"></div><div class="ph" data-ph="Client logo"></div><div class="ph" data-ph="Client logo"></div>
-          <div class="ph" data-ph="Client logo"></div><div class="ph" data-ph="Client logo"></div><div class="ph" data-ph="Client logo"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONSULTATION (Renovac free consultation form) -->
+    <!-- ENQUIRY (Renovac consultation form) -->
     <section class="section section--soft" id="enquiry">
       <div class="container">
         <div class="consult reveal">
           <div class="consult-info">
-            <span class="eyebrow">Free consultation</span>
+            <span class="eyebrow">Enquiry</span>
             <h2>Tell us about your space</h2>
             <p>Share a few details and we'll reply on WhatsApp with recommendations and a quote.</p>
             <ul class="contact-list">
               <li><span class="ico" data-icon="phone"></span><div><small>Call</small><span data-bind="phone"></span></div></li>
               <li><span class="ico" data-icon="mail"></span><div><small>Email</small><span data-bind="email"></span></div></li>
-              <li><span class="ico" data-icon="pin"></span><div><small>Showroom</small><span data-bind="address"></span></div></li>
+              <li><span class="ico" data-icon="pin"></span><div><small>Address</small><span data-bind="address"></span></div></li>
               <li><span class="ico" data-icon="clock"></span><div><small>Hours</small><span data-bind="hours"></span></div></li>
             </ul>
           </div>
@@ -243,7 +196,8 @@
               <div class="field full"><label>What do you need?</label>
                 <div class="pill-group">
                   <label><input type="radio" name="Requirement" value="Home AC" checked><span>Home AC</span></label>
-                  <label><input type="radio" name="Requirement" value="Office / Shop"><span>Office / Shop</span></label>
+                  <label><input type="radio" name="Requirement" value="Office / Commercial"><span>Office / Commercial</span></label>
+                  <label><input type="radio" name="Requirement" value="Hotel / Resort / Hospital project"><span>Hotel / Hospital project</span></label>
                   <label><input type="radio" name="Requirement" value="VRF / Central AC"><span>VRF / Central AC</span></label>
                   <label><input type="radio" name="Requirement" value="Ductable"><span>Ductable</span></label>
                   <label><input type="radio" name="Requirement" value="Chiller"><span>Chiller</span></label>
@@ -257,7 +211,7 @@
               <button class="btn btn-wa" type="submit"><span data-wa></span>Send on WhatsApp</button>
               <button class="btn btn-outline" type="button" data-send-email>Send by email</button>
             </div>
-            <p class="form-note">We usually reply within <span class="ph-text">[response time]</span> during business hours.</p>
+            <p class="form-note">Your details are only used to respond to your enquiry.</p>
           </form>
         </div>
       </div>
@@ -269,41 +223,36 @@
   <script src="assets/js/site-config.js"></script>
   <script src="assets/js/products-data.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/hero-vortex.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/geometries/RoundedBoxGeometry.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/environments/RoomEnvironment.js"></script>
+  <script defer src="assets/js/hero-3d.js"></script>
   <script>
   (function () {
-    const { img, esc, icon, phBox } = window.UI;
+    const { img, esc, icon } = window.UI;
     const CATS = window.CATEGORIES, byId = Object.fromEntries(CATS.map((c) => [c.id, c]));
     document.querySelectorAll("[data-wa]").forEach((el) => (el.outerHTML = window.WA_SVG.replace("<svg", '<svg style="width:18px;height:18px"')));
     document.getElementById("bandPhone").textContent = window.SITE.phone.display;
 
     /* Rotating headline word */
-    const words = ["your home.", "your office.", "your showroom.", "your hotel.", "your hospital.", "your factory."];
+    const words = ["your home.", "your office.", "your hotel.", "your resort.", "your hospital.", "your factory."];
     const rot = document.getElementById("rotator");
     let wi = 0;
     setInterval(() => { wi = (wi + 1) % words.length; rot.innerHTML = `<span>${words[wi]}</span>`; }, 2600);
 
-    /* Product showcase slider */
-    const show = ["inverter-split-acs", "vrf-systems", "ductable-air-conditioners", "light-commercial-air-conditioners", "hitachi-chillers", "window-acs"].map((id) => byId[id]);
-    const stage = document.getElementById("showcaseStage"), dots = document.getElementById("showcaseDots");
-    stage.innerHTML = show.map((c, i) => `<div class="showcase-slide ${i ? "" : "active"}"><img src="${img(c.cover)}" alt="Hitachi ${esc(c.name)}"></div>`).join("");
-    dots.innerHTML = show.map((c, i) => `<button class="${i ? "" : "active"}" aria-label="Show ${esc(c.name)}"></button>`).join("");
-    let si = 0, timer;
-    const go = (i) => {
-      si = i;
-      stage.querySelectorAll(".showcase-slide").forEach((s, k) => s.classList.toggle("active", k === i));
-      dots.querySelectorAll("button").forEach((d, k) => d.classList.toggle("active", k === i));
-      document.getElementById("showcaseCat").textContent = `${show[i].count} models`;
-      document.getElementById("showcaseName").textContent = show[i].name;
-    };
-    const play = () => { clearInterval(timer); timer = setInterval(() => go((si + 1) % show.length), 3500); };
-    dots.querySelectorAll("button").forEach((d, k) => d.addEventListener("click", () => { go(k); play(); }));
-    go(0); play();
+    /* Hero ticker: the product range, scrolling slowly along the bottom edge */
+    const tick = CATS.filter((c) => c.cover).map((c) =>
+      `<a href="products.html?cat=${c.id}">${esc(c.name)} <span>(${c.count})</span></a><i aria-hidden="true">✻</i>`).join("");
+    document.getElementById("heroTicker").innerHTML =
+      `<div class="hero-ticker-track"><div>${tick}</div><div aria-hidden="true">${tick}</div></div>`;
+    document.querySelectorAll("#heroTicker [aria-hidden] a").forEach((a) => a.tabIndex = -1);
 
     /* Category grid */
     const arrow = icon("arrow");
     const card = (c, feature) => `
       <a class="cat-card ${feature ? "cat-card--feature" : ""} reveal" href="products.html?cat=${c.id}">
-        <div class="cat-media">${c.cover ? `<img src="${img(c.cover)}" alt="Hitachi ${esc(c.name)}" loading="lazy">` : phBox("Category image", "800×600")}</div>
+        <div class="cat-media">${c.cover ? `<img src="${img(c.cover)}" alt="Hitachi ${esc(c.name)}" loading="lazy">` : `<span class="cat-icon">${icon("snow")}</span>`}</div>
         <div class="cat-body">
           <span class="cat-count">${c.count} model${c.count === 1 ? "" : "s"}</span>
           <h3>${esc(c.name)}</h3>
@@ -316,8 +265,8 @@
       `<a class="cat-card reveal" href="contact.html#enquiry" style="background:var(--red);border:0;color:#fff;justify-content:center">
          <div class="cat-body" style="justify-content:center">
            <span class="cat-count" style="color:#ffd0d5">Need help choosing?</span>
-           <h3 style="color:#fff">Book a free site survey</h3>
-           <p style="color:#ffe3e6">We'll size the right system for your space.</p>
+           <h3 style="color:#fff">Talk to our team</h3>
+           <p style="color:#ffe3e6">We'll recommend the right system for your requirement.</p>
            <span class="link-arrow" style="color:#fff">Get in touch ${arrow}</span>
          </div>
        </a>`;
@@ -325,12 +274,11 @@
 
     /* Spaces tabs */
     const spaces = [
-      { icon: "home", name: "Homes & apartments", text: "Quiet, efficient comfort for bedrooms and living rooms, built for Jodhpur's hot summers.", recs: ["inverter-split-acs", "window-acs", "fixed-speed-split-acs"] },
-      { icon: "office", name: "Offices & IT", text: "Even cooling across cabins and open floors, with zone control to keep running costs down.", recs: ["light-commercial-air-conditioners", "vrf-systems", "ductable-air-conditioners"] },
-      { icon: "store", name: "Showrooms & retail", text: "Discreet ceiling cassettes and ducted systems that keep customers comfortable all day.", recs: ["light-commercial-air-conditioners", "ductable-air-conditioners", "vrf-systems"] },
-      { icon: "hotel", name: "Hotels & restaurants", text: "Individual room control for guests and high-capacity cooling for halls and kitchens.", recs: ["vrf-systems", "ductable-air-conditioners", "light-commercial-air-conditioners"] },
-      { icon: "hospital", name: "Hospitals & clinics", text: "Reliable, round-the-clock cooling for wards, OTs and diagnostic areas.", recs: ["vrf-systems", "hitachi-chillers", "ductable-air-conditioners"] },
-      { icon: "factory", name: "Industry & campuses", text: "Plant-scale chillers and central systems for large, demanding facilities.", recs: ["hitachi-chillers", "vrf-systems", "ductable-air-conditioners"] }
+      { icon: "home", name: "Homes", text: "From air-conditioning for a single room to the whole house: efficient, quiet comfort for Jodhpur's summers.", recs: ["inverter-split-acs", "window-acs", "fixed-speed-split-acs"] },
+      { icon: "office", name: "Offices & commercial buildings", text: "Even cooling across cabins, open floors and common areas, with central and zoned options.", recs: ["light-commercial-air-conditioners", "vrf-systems", "ductable-air-conditioners"] },
+      { icon: "hotel", name: "Hotels & resorts", text: "Individual room comfort for guests and high-capacity cooling for lobbies, halls and restaurants.", recs: ["vrf-systems", "ductable-air-conditioners", "light-commercial-air-conditioners"] },
+      { icon: "hospital", name: "Hospitals", text: "Reliable cooling for wards, operation theatres and diagnostic areas.", recs: ["vrf-systems", "hitachi-chillers", "ductable-air-conditioners"] },
+      { icon: "factory", name: "Industrial facilities", text: "Plant-scale chillers and central systems for large, demanding sites.", recs: ["hitachi-chillers", "vrf-systems", "ductable-air-conditioners"] }
     ];
     const sp = document.getElementById("spaces");
     sp.innerHTML = `
@@ -343,7 +291,7 @@
             <div class="space-recs">${s.recs.map((id) => `<a class="space-rec" href="products.html?cat=${id}"><img src="${img(byId[id].cover)}" alt="" loading="lazy"><span>${esc(byId[id].name)}<small>${byId[id].count} models</small></span></a>`).join("")}</div>
             <a class="btn btn-primary btn-sm" href="contact.html#enquiry">Get a recommendation</a>
           </div>
-          <div class="space-visual">${phBox("Photo: completed installation", s.name + " · 800×1000")}</div>
+          <div class="space-visual"><img src="${img(byId[s.recs[0]].cover)}" alt="Hitachi ${esc(byId[s.recs[0]].name)}" loading="lazy"></div>
         </div>`).join("")}</div>`;
     sp.querySelectorAll(".space-tab").forEach((b) => b.addEventListener("click", () => {
       sp.querySelectorAll(".space-tab").forEach((x) => { x.classList.toggle("active", x === b); x.setAttribute("aria-selected", x === b); });

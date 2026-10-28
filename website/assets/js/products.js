@@ -2,7 +2,7 @@
    Deep links: products.html?cat=<category-id>  ·  products.html#p-<product-id> */
 (function () {
   "use strict";
-  const { img, esc, icon, phBox, waLink } = window.UI;
+  const { img, esc, icon, waLink } = window.UI;
   const S = window.SITE, CATS = window.CATEGORIES, PRODS = window.PRODUCTS;
   const byCat = Object.fromEntries(CATS.map((c) => [c.id, c]));
   const $ = (id) => document.getElementById(id);
@@ -47,7 +47,7 @@
     $("prodGrid").innerHTML = list.map((p) => `
       <button class="prod-card reveal" data-id="${p.id}" aria-label="View details: ${esc(p.name)}">
         <div class="prod-media">
-          ${p.images.length ? `<img src="${img(p.images[0])}" alt="${esc(p.name)}" loading="lazy">` : phBox("Product image", "800×800")}
+          ${p.images.length ? `<img src="${img(p.images[0])}" alt="${esc(p.name)}" loading="lazy">` : `<span class="cat-icon">${icon("snow")}</span>`}
           ${p.images.length > 1 ? `<span class="more">+${p.images.length - 1} photos</span>` : ""}
         </div>
         <div class="prod-body">
@@ -68,7 +68,7 @@
     if (!p) return;
     lastFocus = document.activeElement;
     const setMain = (i) => {
-      $("mMain").innerHTML = p.images.length ? `<img src="${img(p.images[i])}" alt="${esc(p.name)}">` : phBox("Product image", "Add photos in company-data/images/products");
+      $("mMain").innerHTML = p.images.length ? `<img src="${img(p.images[i])}" alt="${esc(p.name)}">` : `<span class="cat-icon" style="width:140px;height:140px">${icon("snow")}</span>`;
       $("mThumbs").querySelectorAll("button").forEach((b, k) => b.classList.toggle("active", k === i));
     };
     $("mThumbs").innerHTML = p.images.length > 1 ? p.images.map((src, i) => `<button aria-label="Photo ${i + 1}"><img src="${img(src)}" alt=""></button>`).join("") : "";

@@ -78,9 +78,16 @@
     ["about", "about.html", "About Us"],
     ["contact", "contact.html", "Contact"]
   ];
-  const logoHTML = S.logo
-    ? `<img src="${img(S.logo)}" alt="${esc(S.name)}">`
-    : `<span class="logo-mark">Y</span><span class="logo-text"><strong>${esc(S.name)}</strong><span>${esc(S.tradeName)} · Jodhpur</span></span>`;
+  const markHTML = S.logo
+    ? `<img class="logo-emblem" src="${img(S.logo)}" alt="" width="56" height="56">`
+    : `<span class="logo-mark">Y</span>`;
+  const line = esc(S.headerLine || "Jodhpur");
+  // Header (white): emblem + wordmark image + red line
+  const logoHTML = markHTML + (S.wordmark
+    ? `<span class="logo-text"><img class="logo-wordmark" src="${img(S.wordmark)}" alt="${esc(S.name)}"><span>${line}</span></span>`
+    : `<span class="logo-text"><strong>${esc(S.name)}</strong><span>${line}</span></span>`);
+  // Footer (dark): the black wordmark wouldn't show, so use live text
+  const footerLogoHTML = markHTML + `<span class="logo-text"><strong>${esc(S.name)}</strong><span>${line}</span></span>`;
 
   const megaHTML = `
     <div class="mega" role="region" aria-label="Product categories">
@@ -90,38 +97,27 @@
           <div class="mega-grid">
             ${CATS.map((c) => `
               <a class="mega-item" href="products.html?cat=${c.id}">
-                ${c.cover ? `<img src="${img(c.cover)}" alt="" loading="lazy">` : phBox("", "")}
+                ${c.cover ? `<img src="${img(c.cover)}" alt="" loading="lazy">` : `<span class="cat-icon cat-icon--sm">${icon("snow")}</span>`}
                 <span><strong>${esc(c.name)}</strong><small>${c.count} model${c.count === 1 ? "" : "s"} · ${esc(c.short)}</small></span>
               </a>`).join("")}
           </div>
           <p style="margin:18px 10px 0"><a class="link-arrow" href="products.html">View all products ${icon("arrow")}</a></p>
         </div>
         <div class="mega-promo">
-          <span class="tag">Free site survey</span>
+          <span class="tag">Need help choosing?</span>
           <h4>Not sure which AC fits your space?</h4>
-          <p>Our team visits, measures the heat load and recommends the right tonnage and system. No obligation.</p>
-          <a class="btn btn-primary btn-sm" href="contact.html#enquiry">Book a free survey</a>
+          <p>From a single room to a hotel or hospital, our team will recommend the right Hitachi system for your requirement.</p>
+          <a class="btn btn-primary btn-sm" href="contact.html#enquiry">Talk to our team</a>
         </div>
       </div>
     </div>`;
 
   const headerHTML = `
-    <div class="topbar">
-      <div class="container">
-        <div class="topbar-left">
-          <span class="topbar-item badge-partner">${icon("award")} Authorised Hitachi Channel Partner · Since ${S.established}</span>
-          <span class="topbar-item hide-md">${icon("pin")} Ratanada, Jodhpur</span>
-        </div>
-        <div class="topbar-right">
-          <a class="topbar-item" href="tel:${S.phone.tel}">${icon("phone")} ${esc(S.phone.display)}</a>
-          <a class="topbar-item hide-md" href="mailto:${S.email}">${icon("mail")} ${esc(S.email)}</a>
-          <span class="topbar-item hide-md">${icon("clock")} ${S.hours ? esc(S.hours[0].join(": ")) : phText("Business hours")}</span>
-        </div>
-      </div>
-    </div>
     <header class="header" id="header">
-      <div class="container">
+      <div class="header-tab">
         <a class="logo" href="index.html" aria-label="${esc(S.name)} home">${logoHTML}</a>
+      </div>
+      <div class="header-pill">
         <nav aria-label="Main">
           <ul class="nav" id="nav">
             ${nav.map(([id, href, label, mega]) => mega
@@ -133,58 +129,69 @@
             </li>
           </ul>
         </nav>
-        <div class="header-cta">
-          <a class="btn btn-primary btn-sm" href="contact.html#enquiry">Get a Free Quote</a>
-          <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">${icon("menu")}</button>
-        </div>
+        <a class="btn btn-primary btn-sm header-quote" href="contact.html#enquiry">Get a Free Quote</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">${icon("menu")}</button>
       </div>
     </header>`;
 
   /* ---------- Footer ---------- */
-  const socials = ["facebook", "instagram", "youtube", "linkedin"].map((k) => S.social[k]
-    ? `<a href="${S.social[k]}" target="_blank" rel="noopener" aria-label="${k}">${icon(k)}</a>`
-    : `<span title="[PLACEHOLDER] ${k} link" aria-hidden="true">${icon(k)}</span>`).join("");
+  // Social links render only when a real URL is set in site-config.js
+  const socials = ["facebook", "instagram", "youtube", "linkedin"].filter((k) => S.social[k])
+    .map((k) => `<a href="${S.social[k]}" target="_blank" rel="noopener" aria-label="${k}">${icon(k)}</a>`).join("");
+  const navLinks = [["index.html", "Home"], ["products.html", "Products"], ["services.html", "Services"], ["about.html", "About Us"], ["contact.html", "Contact"]];
 
   const footerHTML = `
     <footer class="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div>
-            <a class="logo" href="index.html">${logoHTML}</a>
-            <p>${S.tagline ? esc(S.tagline) : `Authorised Hitachi channel partner in Jodhpur since ${S.established}: residential, commercial and central air conditioning, with installation and service.`}</p>
-            <div class="social">${socials}</div>
+      <div class="footer-shell">
+        <div class="container">
+          <!-- Brand row -->
+          <div class="f-brand">
+            <div>
+              <p class="f-name">${esc(S.name)}</p>
+              <p class="f-tagline">${esc(S.tagline)}.</p>
+            </div>
+            <div class="f-actions">
+              <a class="btn btn-primary" href="contact.html#enquiry">Get a quote</a>
+              <a class="f-call" href="tel:${S.phone.tel}"><small>Call us</small>${esc(S.phone.display)}</a>
+            </div>
           </div>
-          <div>
-            <h4>Products</h4>
-            <ul>${CATS.slice(0, 7).map((c) => `<li><a href="products.html?cat=${c.id}">${esc(c.name)}</a></li>`).join("")}</ul>
+
+          <!-- Columns -->
+          <div class="f-grid">
+            <div class="f-col f-dealer">
+              <h4>Authorised dealer</h4>
+              ${S.partnerLogo ? `<div class="f-partner"><img src="${img(S.partnerLogo)}" alt="Bosch, Hitachi Cooling and Heating" loading="lazy"></div>` : ""}
+              <p class="f-cred">${esc(S.authorisation)}</p>
+              <p class="f-cert"><span class="f-dot"></span>${esc(S.certification)}</p>
+            </div>
+            <div class="f-col">
+              <h4>Explore</h4>
+              <ul>${navLinks.map(([h, l]) => `<li><a href="${h}">${l}</a></li>`).join("")}</ul>
+            </div>
+            <div class="f-col">
+              <h4>Products</h4>
+              <ul>${CATS.filter((c) => c.cover).map((c) => `<li><a href="products.html?cat=${c.id}">${esc(c.name)}</a></li>`).join("")}</ul>
+            </div>
+            <div class="f-col f-contact">
+              <h4>Contact</h4>
+              <dl>
+                <dt>Address</dt><dd>${esc(S.address.line1)},<br>${esc(S.address.line2)}</dd>
+                <dt>Mobile</dt><dd>${S.phones.map((x) => `<a href="tel:${x.tel}">${esc(x.display)}</a>`).join("<br>")}</dd>
+                <dt>Email</dt><dd><a href="mailto:${S.email}">${esc(S.email)}</a></dd>
+                <dt>Hours</dt><dd>${S.hours ? S.hours.map((h) => esc(h.join(": "))).join("<br>") : phText("Business hours")}</dd>
+              </dl>
+              ${socials ? `<div class="f-social">${socials}</div>` : ""}
+            </div>
           </div>
-          <div>
-            <h4>Company</h4>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="services.html#amc">AMC Plans</a></li>
-              <li><a href="about.html#gallery">Showroom</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="${S.indiamart}" target="_blank" rel="noopener">IndiaMART Store</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Visit the showroom</h4>
-            <ul>
-              <li>${esc(S.address.line1)},<br>${esc(S.address.line2)}</li>
-              <li><a href="tel:${S.phone.tel}">${esc(S.phone.display)}</a></li>
-              <li>${S.landlines.map((l) => `<a href="tel:${l.tel}">${esc(l.display)}</a>`).join(" · ")}</li>
-              <li><a href="mailto:${S.email}">${esc(S.email)}</a></li>
-              <li>${S.hours ? S.hours.map((h) => esc(h.join(": "))).join("<br>") : phText("Business hours")}</li>
-            </ul>
+
+          <!-- Bottom bar -->
+          <div class="f-bottom">
+            <span>© ${new Date().getFullYear()} ${esc(S.name)} · GSTIN ${esc(S.gst)}</span>
+            <span>Bosch and Hitachi are trademarks of their respective owners.</span>
+            <button class="to-top" id="toTop">Back to top ${icon("up")}</button>
           </div>
         </div>
-        <div class="footer-bottom">
-          <span>© ${new Date().getFullYear()} ${esc(S.name)}. All rights reserved. · GSTIN ${esc(S.gst)}</span>
-          <span>Hitachi is a trademark of its respective owner.</span>
-          <button class="to-top" id="toTop">Back to top ${icon("up")}</button>
-        </div>
+        <div class="f-watermark" aria-hidden="true">YAMINI</div>
       </div>
     </footer>
     <div class="fab">
@@ -208,15 +215,20 @@
     years: () => String(years),
     established: () => String(S.established),
     phone: () => `<a href="tel:${S.phone.tel}">${esc(S.phone.display)}</a>`,
-    landlines: () => S.landlines.map((l) => `<a href="tel:${l.tel}">${esc(l.display)}</a>`).join(", "),
+    phones: () => S.phones.map((x) => `<a href="tel:${x.tel}">${esc(x.display)}</a>`).join("<br>"),
+    addressArea: () => esc(S.address.area),
+    authorisation: () => esc(S.authorisation),
+    certification: () => esc(S.certification),
     email: () => `<a href="mailto:${S.email}">${esc(S.email)}</a>`,
     address: () => `${esc(S.address.line1)}, ${esc(S.address.line2)}`,
     gst: () => esc(S.gst),
-    tagline: () => (S.tagline ? esc(S.tagline) : phText("Tagline")),
+    tagline: () => esc(S.tagline),
+    brandPartner: () => esc(S.brandPartner),
+    overview: () => esc(S.overview),
+    industry: () => esc(S.industry),
+    category: () => esc(S.category),
     hours: () => (S.hours ? S.hours.map((x) => esc(x.join(": "))).join("<br>") : phText("Business hours")),
-    serviceArea: () => (S.serviceArea ? esc(S.serviceArea) : phText("Service area, e.g. Jodhpur & nearby districts")),
-    rating: () => S.rating.value.toFixed(1),
-    ratingCount: () => String(S.rating.count)
+    serviceArea: () => esc(S.serviceArea)
   };
   $$("[data-bind]").forEach((el) => { const fn = binders[el.dataset.bind]; if (fn) el.innerHTML = fn(); });
   $$("[data-href-tel]").forEach((el) => (el.href = `tel:${S.phone.tel}`));
@@ -338,17 +350,14 @@
     el.innerHTML = items.map(([src, cap]) => `<a href="${img(src)}" data-lightbox data-caption="${esc(cap)}"><img src="${img(src)}" alt="${esc(cap)}" loading="lazy"></a>`).join("");
   };
   window.GALLERY = [
-    ["helplinesearch/helplinesearch-2.jpg", "Inside the Hitachi Studio showroom, Ratanada"],
-    ["gallery/company-signboard-2.png", "The Hitachi Studio storefront"],
+    ["helplinesearch/helplinesearch-2.jpg", "Hitachi air conditioners on display"],
     ["gallery/showroom-6.png", "Split AC display wall and customer desk"],
-    ["helplinesearch/helplinesearch-3.jpg", "Latest Hitachi split ACs on display"],
+    ["helplinesearch/helplinesearch-3.jpg", "Latest Hitachi split ACs"],
     ["gallery/showroom-5.png", "Hitachi refrigerators on display"],
     ["gallery/showroom-3.png", "Our team at the Hitachi counter"],
     ["gallery/showroom-2.png", "Hitachi air conditioner display stand"],
-    ["helplinesearch/helplinesearch-1.jpg", "Find us by the red Hitachi Studio sign"],
     ["gallery/showroom-1.png", "Wall-mounted split ACs, ready to demo"],
-    ["helplinesearch/helplinesearch-4.jpg", "Hitachi-branded display wall"],
-    ["gallery/showroom-4.png", "Compare models side by side"],
-    ["gallery/company-signboard-1.png", "Storefront, Old Loco Shed Road"]
+    ["helplinesearch/helplinesearch-4.jpg", "Hitachi display wall"],
+    ["gallery/showroom-4.png", "Compare models side by side"]
   ];
 })();

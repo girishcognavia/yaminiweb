@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Yamini Enterprises, Ratanada, Jodhpur</title>
-  <meta name="description" content="Contact Yamini Enterprises (Hitachi Studio), Anand Mangal Building, Old Loco Shed Road, Ratanada, Jodhpur. Call +91 94141 00877 for Hitachi AC sales and service.">
+  <title>Contact | Yamini Enterprises, R.K. Nagar, Jodhpur</title>
+  <meta name="description" content="Contact Yamini Enterprises, authorised sale &amp; service dealer for Hitachi air conditioners in Jodhpur: 134, R.K. Nagar, Opp. B.R. Birla Public School, Jodhpur 342008. Call +91 94141 00877 or +91 63757 75857.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -18,17 +18,17 @@
       <div class="container">
         <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></nav>
         <h1>Talk to our team</h1>
-        <p>Get a quote, book a site survey or request service. Call, WhatsApp or visit the Hitachi Studio in Ratanada.</p>
+        <p>Get a quote, discuss a project or request service. Call, WhatsApp or visit us at R.K. Nagar, Jodhpur. We take on projects across Rajasthan.</p>
       </div>
     </section>
 
     <section class="section" style="padding-bottom:48px">
       <div class="container">
         <div class="contact-cards">
-          <div class="contact-card reveal"><span class="ico" data-icon="phone"></span><small>Mobile</small><span data-bind="phone"></span></div>
-          <div class="contact-card reveal"><span class="ico" data-icon="headset"></span><small>Landline</small><span data-bind="landlines"></span></div>
-          <div class="contact-card reveal"><span class="ico" data-icon="mail"></span><small>Email</small><span data-bind="email" style="word-break:break-all"></span></div>
-          <div class="contact-card reveal"><span class="ico" data-icon="pin"></span><small>Showroom</small><span data-bind="address" style="font-weight:600"></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="phone"></span><small>Mobile</small><span data-bind="phones"></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="award"></span><small>Authorised dealer</small><span style="font-weight:600">Sale &amp; service, Hitachi Air Conditioners · <span data-bind="certification"></span></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="mail"></span><small>Email</small><span data-bind="email" style="font-size:.9rem;overflow-wrap:anywhere"></span></div>
+          <div class="contact-card reveal"><span class="ico" data-icon="pin"></span><small>Address</small><span data-bind="address" style="font-weight:600"></span></div>
         </div>
       </div>
     </section>
@@ -52,7 +52,7 @@
               <div class="field"><label for="c-phone">Phone *</label><input id="c-phone" name="Phone" type="tel" required pattern="[0-9+ -]{10,}" autocomplete="tel"></div>
               <div class="field"><label for="c-email">Email</label><input id="c-email" name="Email" type="email" autocomplete="email"></div>
               <div class="field"><label for="c-type">I'm a</label>
-                <select id="c-type" name="Customer type"><option>Homeowner</option><option>Business / Office</option><option>Builder / Contractor</option><option>Dealer</option><option>Institution (hospital, school…)</option></select>
+                <select id="c-type" name="Customer type"><option>Homeowner</option><option>Office / Commercial building</option><option>Hotel / Resort</option><option>Hospital / Institution</option><option>Industrial facility</option><option>Builder / Contractor</option></select>
               </div>
               <div class="field full"><label>Requirement</label>
                 <div class="pill-group">
@@ -61,7 +61,7 @@
                   <label><input type="radio" name="Requirement" value="Installation"><span>Installation</span></label>
                   <label><input type="radio" name="Requirement" value="AMC"><span>AMC</span></label>
                   <label><input type="radio" name="Requirement" value="Repair"><span>Repair</span></label>
-                  <label><input type="radio" name="Requirement" value="Site survey"><span>Free site survey</span></label>
+                  <label><input type="radio" name="Requirement" value="Site visit"><span>Site visit</span></label>
                 </div>
               </div>
               <div class="field full"><label for="c-msg">Details</label><textarea id="c-msg" name="Details" placeholder="Model you're interested in, number of rooms, area, issue with your AC…"></textarea></div>
@@ -81,10 +81,13 @@
         <div class="map-wrap reveal" id="mapWrap"></div>
         <div class="reveal" style="display:flex;flex-direction:column;justify-content:center">
           <span class="eyebrow">Visit us</span>
-          <h2>Hitachi Studio, Ratanada</h2>
-          <p style="color:var(--muted)" data-bind="address"></p>
-          <p style="color:var(--muted)">Look for the red <strong>HITACHI STUDIO</strong> sign on Old Loco Shed Road.</p>
-          <img data-src="helplinesearch/helplinesearch-1.jpg" alt="Red Hitachi Studio storefront sign" style="border-radius:16px;margin:8px 0 22px;aspect-ratio:16/9;object-fit:cover;width:100%">
+          <h2>R.K. Nagar, Jodhpur</h2>
+          <p style="color:var(--ink);font-size:1.1rem;font-weight:600;margin-bottom:6px" data-bind="address"></p>
+          <p style="color:var(--muted)">Landmark: opposite B.R. Birla Public School.</p>
+          <ul class="contact-list visit-list">
+            <li><span class="ico" data-icon="phone"></span><div><small>Mobile</small><span data-bind="phones"></span></div></li>
+            <li><span class="ico" data-icon="clock"></span><div><small>Business hours</small><span data-bind="hours"></span></div></li>
+          </ul>
           <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-primary" id="directions" target="_blank" rel="noopener" href="#">Get directions</a><a class="btn btn-outline" data-href-tel href="#">Call before visiting</a></div>
         </div>
       </div>
