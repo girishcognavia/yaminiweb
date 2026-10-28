@@ -16,7 +16,7 @@ A static site (HTML, CSS and plain JavaScript) with no build step. Open `index.h
 |---|---|
 | Phone, email, address, hours, social links, logo, owner photo, tagline | `assets/js/site-config.js` (any `null` value shows as a `[PLACEHOLDER]`) |
 | Products and categories | `assets/js/products-data.js` (generated from the IndiaMART catalogue; edit directly) |
-| Product and store images | `../company-data/images/` (`website/images` is a symlink to it) |
+| Product, brand and store images | `images/` (brand logos in `images/brand/`, client originals in `images/company logo/`) |
 | Projects, testimonials, client logos, AMC prices, FAQ answers | Search the HTML for `ph-text` and `data-ph="` |
 | Colours and fonts | Top of `assets/css/style.css` (`:root`) |
 
@@ -25,5 +25,5 @@ Placeholders are highlighted in amber for review. Set `showPlaceholderHints: fal
 ## Notes
 - The enquiry forms have no server. Submitting opens WhatsApp with the details filled in, and the second button opens an email instead.
 - The map pin on the Contact page is an approximate address search. Put the exact Google Maps embed URL in `mapEmbed`.
-- Run locally: `cd website && python3 -m http.server 8000`, then open http://localhost:8000
-- `website/images` is a symlink. When deploying, replace it with a real copy of the folder (`cp -RL images images_real`), because many hosts don't follow symlinks.
+- Run locally: `python3 -m http.server 8000` from the repo root, then open http://localhost:8000
+- Deployed with GitHub Pages from the repo root (custom domain in `CNAME`); `_config.yml` keeps `company-data/` and `README.md` out of the published site.

@@ -49,7 +49,7 @@ window.SITE = {
   },
   indiamart: "https://www.indiamart.com/yamini-enterprises-jodhpur/",
 
-  // website/images is a link to company-data/images, so images only need replacing once.
+  // All images live in images/ at the repo root (served by GitHub Pages).
   imgBase: "images/",
 
   // true = highlight every placeholder (for review). Set false before going live.

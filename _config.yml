@@ -1,0 +1,6 @@
+# The site is plain static HTML served from the repo root — Jekyll just copies it.
+# Keep the research source and repo docs out of the published site.
+exclude:
+  - README.md
+  - company-data/
+  - node_modules/
