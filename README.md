@@ -27,3 +27,13 @@ Placeholders are highlighted in amber for review. Set `showPlaceholderHints: fal
 - The map pin on the Contact page is an approximate address search. Put the exact Google Maps embed URL in `mapEmbed`.
 - Run locally: `python3 -m http.server 8000` from the repo root, then open http://localhost:8000
 - Deployed with GitHub Pages from the repo root (custom domain in `CNAME`); `_config.yml` keeps `company-data/` and `README.md` out of the published site.
+
+## SEO & GEO (search engines + AI answer engines)
+After changing `assets/js/site-config.js`, `assets/js/products-data.js`, a page title/description or the FAQ, run:
+
+```
+node tools/prerender.js
+```
+
+It writes crawlable copies of the JavaScript-rendered content into the HTML (header, footer, contact details, product catalogue), plus canonical/Open Graph/geo tags and JSON-LD structured data (HVACBusiness, Person, FAQPage, ItemList, BreadcrumbList) into each page's `<head>`. It also regenerates `sitemap.xml`, `robots.txt` and `llms.txt`. Never edit the blocks between `SEO:START`/`SEO:END` or `prerender:*` markers by hand.
+

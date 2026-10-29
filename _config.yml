@@ -4,3 +4,8 @@ exclude:
   - README.md
   - company-data/
   - node_modules/
+  - tools/
+# Serve these as-is (Jekyll would otherwise skip or reprocess them)
+include:
+  - llms.txt
+  - robots.txt
