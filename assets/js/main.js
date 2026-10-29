@@ -194,10 +194,10 @@
         <div class="f-watermark" aria-hidden="true">YAMINI</div>
       </div>
     </footer>
-    <div class="fab">
+    ${page === "home" ? "" : `<div class="fab">
       <a class="wa" href="${waLink("Hello Yamini Enterprises, I'd like to know more about Hitachi air conditioners.")}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">${WA_SVG}</a>
       <a class="call" href="tel:${S.phone.tel}" aria-label="Call us">${icon("phone")}</a>
-    </div>
+    </div>`}
     <nav class="mobile-bar" aria-label="Quick actions">
       <a href="tel:${S.phone.tel}">${icon("phone")}Call</a>
       <a class="wa" href="${waLink("Hello Yamini Enterprises, I'd like to know more about Hitachi air conditioners.")}" target="_blank" rel="noopener">${WA_SVG}WhatsApp</a>

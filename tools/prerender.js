@@ -226,7 +226,12 @@ function fillBinds(html) {
 
 /* ---------------- Category grid (home) + product catalogue ---------------- */
 function catGridHtml() {
-  return CATS.map((c) => `<a class="cat-card" href="products.html?cat=${c.id}"><div class="cat-media">${c.cover ? `<img src="${img(c.cover)}" alt="Hitachi ${esc(c.name)}" loading="lazy">` : ""}</div><div class="cat-body"><span class="cat-count">${c.count} model${c.count === 1 ? "" : "s"}</span><h3>${esc(c.name)}</h3><p>${esc(c.short)}</p></div></a>`).join("");
+  const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  return CATS.map((c) => `<a class="range-card" href="products.html?cat=${c.id}"><span class="range-count">${c.count} model${c.count === 1 ? "" : "s"}</span><div class="range-media">${c.cover ? `<img src="${img(c.cover)}" alt="Hitachi ${esc(c.name)}" loading="lazy">` : ""}</div><div class="range-body"><div><h3>${esc(c.name)}</h3><p>${esc(c.short)}</p></div><span class="range-go" aria-hidden="true">${arrow}</span></div></a>`).join("");
+}
+function worksHtml() {
+  // No-JS fallback (also what crawlers read): a swipeable row of image cards
+  return `<ul class="works-static">${(S.works || []).map((w) => `<li class="ws-card${w.photo ? " is-photo" : ""}"><img src="${img(w.img)}" alt="${esc(w.title)}" loading="lazy"><div><small>${esc(w.tag)} · ${esc(w.place)}</small><h3>${esc(w.title)}</h3><p>${esc(w.text)} Systems: ${w.systems.map(esc).join(", ")}.</p></div></li>`).join("")}</ul>`;
 }
 function prodGridHtml() {
   return PRODS.map((p) => {
@@ -248,6 +253,21 @@ function setInner(html, openTagRe, inner, label) {
 }
 
 /* ---------------- Run ---------------- */
+/* ---------------- Cache-busting: ?v=<content hash> on local CSS/JS ---------------- */
+const crypto = require("crypto");
+const verCache = {};
+function version(rel) {
+  if (!(rel in verCache)) {
+    const f = path.join(ROOT, rel);
+    verCache[rel] = fs.existsSync(f) ? crypto.createHash("sha1").update(fs.readFileSync(f)).digest("hex").slice(0, 8) : "";
+  }
+  return verCache[rel];
+}
+function stampAssets(html) {
+  return html.replace(/((?:src|href)=")(\/?)(assets\/(?:css|js)\/[\w.-]+\.(?:css|js))(?:\?v=\w*)?(")/g,
+    (m, a, slash, rel, z) => `${a}${slash}${rel}${version(rel) ? "?v=" + version(rel) : ""}${z}`);
+}
+
 for (const page of PAGES) {
   const file = path.join(ROOT, page.file);
   let html = fs.readFileSync(file, "utf8");
@@ -257,9 +277,11 @@ for (const page of PAGES) {
 
   html = setInner(html, /<div id="site-header">/, headerHtml(page), "prerender:header");
   html = setInner(html, /<div id="site-footer">/, footerHtml(), "prerender:footer");
-  if (page.file === "index.html") html = setInner(html, /<div class="cat-grid" id="catGrid">/, catGridHtml(), "prerender:cats");
+  if (page.file === "index.html") html = setInner(html, /<div class="range-grid" id="catGrid">/, catGridHtml(), "prerender:cats");
+  if (page.file === "index.html") html = setInner(html, /<div class="works-stage" id="worksStage" aria-label="Our work">/, worksHtml(), "prerender:works");
   if (page.file === "products.html") html = setInner(html, /<div class="prod-grid" id="prodGrid">/, prodGridHtml(), "prerender:products");
   html = fillBinds(html);
+  html = stampAssets(html);
 
   fs.writeFileSync(file, html);
   console.log("updated", page.file);
@@ -298,6 +320,8 @@ Allow: /
 Sitemap: ${SITE_URL}/sitemap.xml
 `);
 
+const faqLines = faqFromHtml(fs.readFileSync(path.join(ROOT, "services.html"), "utf8"))
+  .map((q) => `### ${q.name}\n${q.acceptedAnswer.text}`).join("\n\n");
 const catLines = CATS.map((c) => `- [${c.name}](${abs(`products.html?cat=${c.id}`)}): ${c.count} models. ${c.short} ${c.series}`).join("\n");
 fs.writeFileSync(path.join(ROOT, "llms.txt"),
 `# ${S.name}
@@ -329,6 +353,9 @@ ${S.hours ? `- Hours: ${S.hours.map((h) => h.join(" ")).join("; ")}\n` : ""}
 ## Product range (Hitachi)
 ${catLines}
 
+## Frequently asked questions
+${faqLines}
+
 ## Pages
 - [Home](${SITE_URL}/)
 - [Products](${abs("products.html")}): full Hitachi catalogue with specifications (${PRODS.length} models)
@@ -336,4 +363,6 @@ ${catLines}
 - [About](${abs("about.html")}): company history and founder
 - [Contact](${abs("contact.html")}): address, phone and enquiry form
 `);
-console.log("wrote sitemap.xml, robots.txt, llms.txt");
+const p404 = path.join(ROOT, "404.html");
+if (fs.existsSync(p404)) fs.writeFileSync(p404, stampAssets(fs.readFileSync(p404, "utf8")));
+console.log("wrote sitemap.xml, robots.txt, llms.txt; stamped asset versions");

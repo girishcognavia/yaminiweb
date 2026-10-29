@@ -29,11 +29,11 @@ Placeholders are highlighted in amber for review. Set `showPlaceholderHints: fal
 - Deployed with GitHub Pages from the repo root (custom domain in `CNAME`); `_config.yml` keeps `company-data/` and `README.md` out of the published site.
 
 ## SEO & GEO (search engines + AI answer engines)
-After changing `assets/js/site-config.js`, `assets/js/products-data.js`, a page title/description or the FAQ, run:
+After changing **any** CSS/JS file, `assets/js/site-config.js`, `assets/js/products-data.js`, a page title/description or the FAQ, run:
 
 ```
 node tools/prerender.js
 ```
 
-It writes crawlable copies of the JavaScript-rendered content into the HTML (header, footer, contact details, product catalogue), plus canonical/Open Graph/geo tags and JSON-LD structured data (HVACBusiness, Person, FAQPage, ItemList, BreadcrumbList) into each page's `<head>`. It also regenerates `sitemap.xml`, `robots.txt` and `llms.txt`. Never edit the blocks between `SEO:START`/`SEO:END` or `prerender:*` markers by hand.
+It writes crawlable copies of the JavaScript-rendered content into the HTML (header, footer, contact details, product catalogue), plus canonical/Open Graph/geo tags and JSON-LD structured data (HVACBusiness, Person, FAQPage, ItemList, BreadcrumbList) into each page's `<head>`. It also regenerates `sitemap.xml`, `robots.txt` and `llms.txt`, and stamps every CSS/JS link with `?v=<content hash>` so browsers never show a stale cached version. Never edit the blocks between `SEO:START`/`SEO:END` or `prerender:*` markers by hand.
 
