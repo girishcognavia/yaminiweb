@@ -6,6 +6,8 @@
   const S = window.SITE, CATS = window.CATEGORIES, PRODS = window.PRODUCTS;
   const byCat = Object.fromEntries(CATS.map((c) => [c.id, c]));
   const $ = (id) => document.getElementById(id);
+  const URLS = window.PRODUCT_URLS || {};                  // static product pages (catalog-urls.js)
+  const nameOf = (p) => p.name.replace(/\bACs\b/, "AC");
 
   const params = new URLSearchParams(location.search);
   let current = byCat[params.get("cat")] ? params.get("cat") : "all";
@@ -45,18 +47,18 @@
     $("resultCount").textContent = `${list.length} product${list.length === 1 ? "" : "s"}`;
     $("empty").hidden = list.length > 0;
     $("prodGrid").innerHTML = list.map((p) => `
-      <button class="prod-card reveal" data-id="${p.id}" aria-label="View details: ${esc(p.name)}">
+      <${URLS[p.id] ? `a href="${URLS[p.id]}"` : "button"} class="prod-card reveal" data-id="${p.id}" aria-label="View details: ${esc(nameOf(p))}">
         <div class="prod-media">
-          ${p.images.length ? `<img src="${img(p.images[0])}" alt="${esc(p.name)}" loading="lazy">` : `<span class="cat-icon">${icon("snow")}</span>`}
+          ${p.images.length ? `<img src="${img(p.images[0])}" alt="${esc(nameOf(p))}" loading="lazy">` : `<span class="cat-icon">${icon("snow")}</span>`}
           ${p.images.length > 1 ? `<span class="more">+${p.images.length - 1} photos</span>` : ""}
         </div>
         <div class="prod-body">
           <span class="cat-count">${esc(byCat[p.cat].name)}</span>
-          <h3>${esc(p.name)}</h3>
+          <h3>${esc(nameOf(p))}</h3>
           <div class="prod-tags">${shortTags(p).map((t) => `<span>${esc(t)}</span>`).join("")}</div>
           <div class="prod-foot"><span class="price">${p.price ? esc(p.price) : "Price on request"}</span><span class="view">Details →</span></div>
         </div>
-      </button>`).join("");
+      </${URLS[p.id] ? "a" : "button"}>`).join("");
     window.observeReveal($("prodGrid"));
   }
 
@@ -78,10 +80,11 @@
     const enquiry = `Hello Yamini Enterprises, I'm interested in the ${p.name}. Please share the price and availability.`;
     $("mInfo").innerHTML = `
       <span class="cat-count">${esc(byCat[p.cat].name)}</span>
-      <h2 id="mTitle">${esc(p.name)}</h2>
+      <h2 id="mTitle">${esc(nameOf(p))}</h2>
       <div class="modal-price">${icon("rupee")} ${p.price ? esc(p.price) : "Price on request: ask for today's best price"}</div>
       ${p.specs.length ? `<table class="spec-table"><tbody>${p.specs.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</tbody></table>` : `<p style="color:var(--muted)">${window.UI.phText("Product description & specifications")}</p>`}
       ${p.features.map((g) => `<div class="feature-group">${g.title ? `<h4>${esc(g.title)}</h4>` : ""}<ul>${g.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("")}
+      ${URLS[p.id] ? `<p><a class="link-arrow" href="${URLS[p.id]}">Full details page ${icon("arrow")}</a></p>` : ""}
       ${p.video ? `<p><a class="link-arrow" href="https://www.youtube.com/watch?v=${p.video}" target="_blank" rel="noopener">Watch product video ${icon("arrow")}</a></p>` : ""}
       <div class="modal-actions">
         <a class="btn btn-wa" href="${waLink(enquiry)}" target="_blank" rel="noopener">${window.WA_SVG.replace("<svg", '<svg style="width:18px;height:18px"')} Enquire on WhatsApp</a>
@@ -102,7 +105,13 @@
     history.replaceState(null, "", location.pathname + location.search);
     lastFocus && lastFocus.focus();
   }
-  $("prodGrid").addEventListener("click", (e) => { const c = e.target.closest(".prod-card"); if (c) open(c.dataset.id); });
+  // Cards link to each product's own page; a plain click opens the quick-view modal instead
+  $("prodGrid").addEventListener("click", (e) => {
+    const c = e.target.closest(".prod-card");
+    if (!c || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+    e.preventDefault();
+    open(c.dataset.id);
+  });
   modal.addEventListener("click", (e) => { if (e.target.closest("[data-close]")) close(); });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
 

@@ -144,7 +144,7 @@
     pop.querySelector(".wp-text").textContent = w.text;
     pop.querySelector(".wp-systems").innerHTML = w.systems.map((s) => `<li>${icon("check")}${esc(s)}</li>`).join("");
     pop.querySelector(".wp-actions").innerHTML =
-      (w.cat ? `<a class="btn btn-primary btn-sm" href="products.html?cat=${w.cat}">View products</a>` : `<a class="btn btn-primary btn-sm" href="products.html">View products</a>`) +
+      `<a class="btn btn-primary btn-sm" href="${w.cat ? UI.catUrl(w.cat) : "products.html"}">View products</a>` +
       `<a class="btn btn-ghost btn-sm" href="contact.html#enquiry">Get a quote</a>`;
     card.classList.add("is-away");
     pop.classList.add("open");

@@ -8,4 +8,6 @@ exclude:
 # Serve these as-is (Jekyll would otherwise skip or reprocess them)
 include:
   - llms.txt
+  - llms-full.txt
   - robots.txt
+  - ce6a52e4595af36c505a42611d1857d8.txt   # IndexNow key (see tools/indexnow.js)
