@@ -118,7 +118,7 @@ const business = {
     }))
   },
   sameAs: [S.indiamart, ...Object.values(S.social).filter(Boolean)],
-  ...(S.hours ? { openingHours: S.hours.map((h) => h.join(" ")) } : {})
+  ...(S.openingHours ? { openingHours: S.openingHours } : {})
 };
 const website = { "@type": "WebSite", "@id": `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: S.name, publisher: { "@id": BIZ_ID }, inLanguage: "en-IN" };
 
@@ -251,6 +251,7 @@ function footerHtml() {
           <dt>Address</dt><dd>${esc(S.address.line1)},<br>${esc(S.address.line2)}</dd>
           <dt>Mobile</dt><dd>${S.phones.map((x) => `<a href="tel:${x.tel}">${esc(x.display)}</a>`).join("<br>")}</dd>
           <dt>Email</dt><dd><a href="mailto:${S.email}">${esc(S.email)}</a></dd>
+          ${S.hours ? `<dt>Hours</dt><dd>${S.hours.map((h) => esc(h.join(": "))).join("<br>")}</dd>` : ""}
         </dl></address></div>
       </div>
       <div class="f-bottom"><span>© ${new Date().getFullYear()} ${esc(S.name)} · GSTIN ${esc(S.gst)}</span><span>Bosch and Hitachi are trademarks of their respective owners.</span></div>

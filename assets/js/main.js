@@ -283,6 +283,15 @@
   window.observeReveal = (root = document) => $$(".reveal:not(.in)", root).forEach((el) => (io ? io.observe(el) : el.classList.add("in")));
   window.observeReveal();
 
+  /* ---------- Pause looping CSS animations while they're off screen ----------
+     (the hero ticker, marquees, pulsing dots). Otherwise they keep the GPU and
+     paint busy while the visitor is typing in a form further down the page. */
+  const loopIO = "IntersectionObserver" in window && new IntersectionObserver((entries) => {
+    entries.forEach((e) => e.target.classList.toggle("anim-paused", !e.isIntersecting));
+  });
+  window.pauseOffscreen = (root = document) => loopIO && $$(".hero-ticker, .works-hint, .sv-marquee, .map-circle-inner, .find-map-inner", root).forEach((el) => loopIO.observe(el));
+  window.pauseOffscreen();
+
   /* ---------- Counters: <b data-count="17" data-suffix="+"> ---------- */
   const countIO = "IntersectionObserver" in window && new IntersectionObserver((entries) => {
     entries.forEach((e) => {
@@ -304,23 +313,66 @@
     countIO && countIO.observe(el);
   });
 
-  /* ---------- Enquiry forms → WhatsApp / email (no backend needed) ---------- */
+  /* ---------- Enquiry forms ----------
+     WhatsApp: opens a chat with the whole filled-in form as the message.
+     Email: sent straight to S.enquiryEmail in the background via FormSubmit
+     (no backend, no mail app needed); falls back to the visitor's mail app
+     only if that service can't be reached. Fields named _* are not shown. */
+  const FIELD_ORDER = ["Name", "Phone", "Email", "Requirement", "Details"];
+  const fields = (form) => [...new FormData(form).entries()]
+    .filter(([k, v]) => !k.startsWith("_") && String(v).trim())
+    .map(([k, v]) => [k, String(v).trim()])
+    .sort(([a], [b]) => FIELD_ORDER.indexOf(a) - FIELD_ORDER.indexOf(b));   // same order on every form
+  const enquiryText = (form) => ["*New enquiry from yaminient.in*", "", ...fields(form).map(([k, v]) => `*${k}:* ${v}`)].join("\n");
+  const openNew = (href) => {                              // a real link click: never blocked as a pop-up
+    const a = document.createElement("a");
+    a.href = href; a.target = "_blank"; a.rel = "noopener";
+    document.body.appendChild(a); a.click(); a.remove();
+  };
   $$("form[data-enquiry]").forEach((form) => {
-    const build = () => {
-      const d = new FormData(form);
-      const lines = ["New enquiry from website"];
-      for (const [k, v] of d.entries()) if (String(v).trim()) lines.push(`${k}: ${v}`);
-      return lines.join("\n");
-    };
+    const status = document.createElement("p");
+    status.className = "form-status";
+    status.setAttribute("role", "status");
+    status.setAttribute("aria-live", "polite");
+    ($(".pc-send, .letter-send", form) || form).after(status);
+    const say = (msg, kind = "") => { status.className = `form-status${kind ? " is-" + kind : ""}`; status.innerHTML = msg; };
+
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!form.reportValidity()) return;
-      window.open(waLink(build()), "_blank", "noopener");
+      openNew(waLink(enquiryText(form)));
+      say("WhatsApp is opening with your message filled in. Just tap <b>Send</b>.", "ok");
     });
+
     const mailBtn = $("[data-send-email]", form);
-    mailBtn && mailBtn.addEventListener("click", () => {
+    mailBtn && mailBtn.addEventListener("click", async () => {
       if (!form.reportValidity()) return;
-      location.href = `mailto:${S.email}?subject=${encodeURIComponent("Website enquiry")}&body=${encodeURIComponent(build())}`;
+      const data = Object.fromEntries(fields(form));
+      const mailto = `mailto:${S.enquiryEmail || S.email}?subject=${encodeURIComponent("Website enquiry")}&body=${encodeURIComponent(enquiryText(form).replace(/\*/g, ""))}`;
+      const buttons = $$("button", form);
+      buttons.forEach((b) => (b.disabled = true));
+      say("Sending your enquiry…");
+      try {
+        const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(S.enquiryEmail || S.email)}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            ...data,
+            _subject: `Website enquiry from ${data.Name || "a visitor"}${data.Requirement ? ` (${data.Requirement})` : ""}`,
+            _template: "table", _captcha: "false",
+            _honey: (form.elements._honey || {}).value || "",
+            ...(data.Email ? { _replyto: data.Email } : {})
+          })
+        });
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || String(out.success) !== "true") throw new Error(out.message || res.status);
+        form.reset();
+        say(`Thank you! Your enquiry has been emailed to ${esc(S.name)}. We'll get back to you shortly.`, "ok");
+      } catch (err) {
+        say(`We couldn't send it automatically. <a href="${mailto}">Open it in your email app</a> or <a href="tel:${S.phone.tel}">call ${esc(S.phone.display)}</a>.`, "err");
+      } finally {
+        buttons.forEach((b) => (b.disabled = false));
+      }
     });
   });
 

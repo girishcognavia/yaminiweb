@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=c0e5c789">
+  <link rel="stylesheet" href="assets/css/style.css?v=9401ed28">
 </head>
 <body data-page="contact">
   <div id="site-header"><!-- prerender:header --><header class="header" id="header">
@@ -62,7 +62,7 @@
           <li><a class="way" data-href-mail href="mailto:pksharmajodhpur@gmail.com"><span class="way-n">03</span><span class="way-k">Email</span><span class="way-v way-v--sm">pksharmajodhpur@gmail.com</span><span class="way-go" data-icon="arrow"></span></a></li>
           <li><a class="way" href="#find"><span class="way-n">04</span><span class="way-k">Visit</span><span class="way-v way-v--sm">134, R.K. Nagar, Opp. B.R. Birla Public School</span><span class="way-go" data-icon="arrow"></span></a></li>
         </ol>
-        <p class="cp-alt">Also on <a href="tel:+916375775857">+91 63757 75857</a> · Hours: <span data-bind="hours">[Business hours]</span></p>
+        <p class="cp-alt">Also on <a href="tel:+916375775857">+91 63757 75857</a> · Hours: <span data-bind="hours">9:30 AM to 8:00 PM</span></p>
       </div>
     </section>
 
@@ -71,9 +71,10 @@
       <div class="container">
         <div class="cp-post-head">
           <h2 class="hand">Write us a postcard</h2>
-          <p>Fill it in and it opens WhatsApp with everything ready to send.</p>
+          <p>Fill it in once: post it on WhatsApp with everything ready to send, or email it straight to our team.</p>
         </div>
         <form class="postcard" data-enquiry novalidate>
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
           <div class="pc-message">
             <label class="pc-salute hand" for="c-msg">Dear Yamini Enterprises,</label>
             <textarea id="c-msg" name="Details" class="pc-lines" placeholder="Tell us about your space, the model you're interested in, or the issue with your AC…"></textarea>
@@ -140,15 +141,16 @@
           <dt>Address</dt><dd>134, R.K. Nagar, Opp. B.R. Birla Public School,<br>Jodhpur, Rajasthan 342008</dd>
           <dt>Mobile</dt><dd><a href="tel:+919414100877">+91 94141 00877</a><br><a href="tel:+916375775857">+91 63757 75857</a></dd>
           <dt>Email</dt><dd><a href="mailto:pksharmajodhpur@gmail.com">pksharmajodhpur@gmail.com</a></dd>
+          <dt>Hours</dt><dd>9:30 AM to 8:00 PM</dd>
         </dl></address></div>
       </div>
       <div class="f-bottom"><span>© 2026 Yamini Enterprises · GSTIN 08BCRPS3912F1ZA</span><span>Bosch and Hitachi are trademarks of their respective owners.</span></div>
     </div></div></footer><!-- /prerender:footer --></div>
 
-  <script src="assets/js/site-config.js?v=46bfef55"></script>
+  <script src="assets/js/site-config.js?v=43620864"></script>
   <script src="assets/js/products-data.js?v=2a9b17ec"></script>
   <script src="assets/js/catalog-urls.js?v=222558b3"></script>
-  <script src="assets/js/main.js?v=cb29c0b9"></script>
+  <script src="assets/js/main.js?v=1b92faf2"></script>
   <script>
     (function () {
       const S = window.SITE;
@@ -157,8 +159,14 @@
       document.getElementById("directions").href = `https://www.google.com/maps/search/?api=1&query=${q}`;
       const src = S.mapEmbed || `https://maps.google.com/maps?q=${q}&z=16&output=embed`;
       const box = document.getElementById("mapWrap");
-      box.innerHTML = `<iframe src="${src}" title="Map to Yamini Enterprises" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
-      box.firstChild.addEventListener("load", () => box.classList.add("is-loaded"), { once: true });
+      // Google Maps is heavy: load it only as the visitor scrolls towards it, so it never competes with typing in the form
+      const load = () => {
+        box.innerHTML = `<iframe src="${src}" title="Map to Yamini Enterprises" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+        box.firstChild.addEventListener("load", () => box.classList.add("is-loaded"), { once: true });
+      };
+      "IntersectionObserver" in window
+        ? new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { load(); o.disconnect(); } }, { rootMargin: "400px 0px" }).observe(box)
+        : load();
     })();
   </script>
 </body>

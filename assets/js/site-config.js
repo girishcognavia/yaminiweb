@@ -32,6 +32,10 @@ window.SITE = {
   ],
   whatsapp: "919414100877",                   // CONFIRM with client: assumed same as mobile
   email: "pksharmajodhpur@gmail.com",
+  // Website enquiry forms email this address directly (via formsubmit.co, free, no backend).
+  // ONE-TIME SETUP: the first enquiry sent from the live site triggers an "Activate Form"
+  // email to this inbox. Click it once; every enquiry after that arrives automatically.
+  enquiryEmail: "pksharmajodhpur@gmail.com",
 
   address: {                                  // from company letterhead (Oct 2026)
     line1: "134, R.K. Nagar, Opp. B.R. Birla Public School",
@@ -43,7 +47,8 @@ window.SITE = {
   },
   mapEmbed: null,                             // optional: exact Google Maps embed URL (Share → Embed a map → copy the src). null = search by address
 
-  hours: null,                                // PLACEHOLDER e.g. [["Mon–Sat","10:00 AM – 8:00 PM"],["Sunday","Closed"]]
+  hours: [["9:30 AM to 8:00 PM"]],             // rows shown on the site; add a day label per row if needed, e.g. ["Mon–Sat", "9:30 AM to 8:00 PM"]
+  openingHours: null,                          // for Google/AI: set once the open days are confirmed, e.g. ["Mo-Sa 09:30-20:00"]
   serviceArea: "Jodhpur, with projects across Rajasthan",
 
   social: {                                   // PLACEHOLDER: add URLs when available

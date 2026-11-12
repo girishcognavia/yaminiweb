@@ -2,6 +2,7 @@
 <html lang="en-IN">
 <head>
   <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js")</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hitachi AC Dealer in Jodhpur | Yamini Enterprises</title>
   <meta name="description" content="Exclusive Hitachi HVAC dealer and service provider in Jodhpur since 2009. Split, VRF, ductable ACs and chillers, with installation and AMC across Rajasthan.">
@@ -34,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=c0e5c789">
+  <link rel="stylesheet" href="assets/css/style.css?v=9401ed28">
 </head>
 <body data-page="home">
   <div id="site-header"><!-- prerender:header --><header class="header" id="header">
@@ -232,6 +233,7 @@
 
         <div class="letter-grid">
           <form class="letter-card reveal" data-enquiry novalidate>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
             <p class="letter-kicker">A message to Yamini Enterprises</p>
             <label class="letter-label" for="f-name"><span>How shall we call you?</span></label>
             <input class="letter-input" id="f-name" name="Name" required autocomplete="name" placeholder="Type your name here">
@@ -261,7 +263,7 @@
             <div class="letter-rows">
               <div><b data-bind="name">Yamini Enterprises</b><span data-bind="address">134, R.K. Nagar, Opp. B.R. Birla Public School, Jodhpur, Rajasthan 342008</span></div>
               <div><b>Phone</b><span data-bind="phones"><a href="tel:+919414100877">+91 94141 00877</a><br><a href="tel:+916375775857">+91 63757 75857</a></span></div>
-              <div><b>Hours</b><span data-bind="hours"></span></div>
+              <div><b>Hours</b><span data-bind="hours">9:30 AM to 8:00 PM</span></div>
               <div><b>Directions</b><a id="dirLink" target="_blank" rel="noopener" href="#">Open in Google Maps</a></div>
             </div>
           </div>
@@ -281,17 +283,18 @@
           <dt>Address</dt><dd>134, R.K. Nagar, Opp. B.R. Birla Public School,<br>Jodhpur, Rajasthan 342008</dd>
           <dt>Mobile</dt><dd><a href="tel:+919414100877">+91 94141 00877</a><br><a href="tel:+916375775857">+91 63757 75857</a></dd>
           <dt>Email</dt><dd><a href="mailto:pksharmajodhpur@gmail.com">pksharmajodhpur@gmail.com</a></dd>
+          <dt>Hours</dt><dd>9:30 AM to 8:00 PM</dd>
         </dl></address></div>
       </div>
       <div class="f-bottom"><span>© 2026 Yamini Enterprises · GSTIN 08BCRPS3912F1ZA</span><span>Bosch and Hitachi are trademarks of their respective owners.</span></div>
     </div></div></footer><!-- /prerender:footer --></div>
 
-  <script src="assets/js/site-config.js?v=46bfef55"></script>
+  <script src="assets/js/site-config.js?v=43620864"></script>
   <script src="assets/js/products-data.js?v=2a9b17ec"></script>
   <script src="assets/js/catalog-urls.js?v=222558b3"></script>
-  <script src="assets/js/main.js?v=cb29c0b9"></script>
+  <script src="assets/js/main.js?v=1b92faf2"></script>
   <script src="assets/js/hero-vortex.js?v=5dc3ebf0"></script>
-  <script src="assets/js/works.js?v=e7b5392a"></script>
+  <script src="assets/js/works.js?v=a9643b7f"></script>
   <script>
   (function () {
     const { img, esc, icon } = window.UI;
@@ -305,12 +308,12 @@
       document.getElementById("dirLink").href = `https://www.google.com/maps/search/?api=1&query=${q}`;
       if (!box) return;
       const load = () => {
-        box.innerHTML = `<iframe src="${S.mapEmbed || `https://maps.google.com/maps?q=${q}&z=16&output=embed`}" title="Map: ${esc(S.address.line1)}" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+        box.innerHTML = `<iframe src="${S.mapEmbed || `https://maps.google.com/maps?q=${q}&z=16&output=embed`}" title="Map: ${esc(S.address.line1)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
         box.firstChild.addEventListener("load", () => box.classList.add("is-loaded"), { once: true });
       };
       // start well before the section is reached, so the map is ready when you get there
       "IntersectionObserver" in window
-        ? new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { load(); o.disconnect(); } }, { rootMargin: "1800px 0px" }).observe(box)
+        ? new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { load(); o.disconnect(); } }, { rootMargin: "600px 0px" }).observe(box)
         : load();
     })();
 
@@ -318,7 +321,9 @@
     const words = ["your home.", "your office.", "your hotel.", "your resort.", "your hospital.", "your factory."];
     const rot = document.getElementById("rotator");
     let wi = 0;
-    setInterval(() => { wi = (wi + 1) % words.length; rot.innerHTML = `<span>${words[wi]}</span>`; }, 2600);
+    let heroOn = true;                                       // only rotate while the hero is on screen
+    new IntersectionObserver(([e]) => (heroOn = e.isIntersecting)).observe(rot);
+    setInterval(() => { if (!heroOn || document.hidden) return; wi = (wi + 1) % words.length; rot.innerHTML = `<span>${words[wi]}</span>`; }, 2600);
 
     /* Hero ticker: the product range, scrolling slowly along the bottom edge */
     const tick = CATS.filter((c) => c.cover).map((c) =>

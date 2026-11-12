@@ -38,15 +38,24 @@
   const cards = [...ring.children];
 
   /* ---------- curved wall geometry ---------- */
-  let R = 1100, C = 900, P = 1000, cardW = 260, gap = 26, spacing = 286, L = 0;
+  let R = 1100, C = 900, P = 1000, cardW = 260, gap = 26, spacing = 286, L = 0, K = 1;
   function layout() {
     const w = stage.clientWidth;
     cardW = Math.max(170, Math.min(290, w * 0.19));
     gap = cardW * 0.1;
     spacing = cardW + gap;
     R = Math.max(700, w * 0.78);           // cylinder radius
-    P = R * 0.92;                           // perspective (viewer distance)
-    C = P * 0.9;                            // cylinder centre sits just in front of the viewer → concave wall
+    const P0 = R * 0.92, C0 = P0 * 0.9;     // viewer distance; cylinder centre just in front of the viewer → concave wall
+    const stageH = cardW * 1.32 * 1.32 + 40;
+    // Pull the whole wall forward so even the centre card sits in front of the page plane (z > 0). Otherwise browsers
+    // (Safari especially) let the z = 0 plane swallow clicks on the centre cards, leaving only the outer ones clickable.
+    // Moving the wall forward by d with the viewer moved back by d magnifies the picture uniformly by s, so every
+    // length is divided by s (cards via scale(K), so their text shrinks with them): the picture is exactly as before.
+    const d = R - C0 + 2, s = (P0 + d) / P0;
+    R /= s; spacing /= s; K = 1 / s;
+    P = P0;                                 // perspective
+    C = (C0 + d) / s;                       // centre card: z = C - R = 2/s px
+    stage.style.height = stageH + "px";
     L = spacing * items.length;
     stage.style.perspective = P + "px";
     stage.style.setProperty("--cw", cardW + "px");
@@ -54,6 +63,7 @@
   }
 
   let offset = 0, speed = 1, target = 1, hoverSlow = false, paused = false, openIdx = -1;
+  let fade = 0, fadeStart = 0;                             // entrance fade, applied per card (see CSS note on .works-ring)
   function place() {
     const maxA = 1.05;
     cards.forEach((el, i) => {                            // the open card keeps its slot updated (hidden via .is-away)
@@ -63,8 +73,8 @@
       const a = s / R;
       const x = R * Math.sin(a), z = C - R * Math.cos(a);
       const vis = Math.abs(a) < maxA;
-      el.style.transform = `translate3d(${x.toFixed(1)}px, 0, ${z.toFixed(1)}px) rotateY(${(-a).toFixed(4)}rad)`;
-      el.style.opacity = vis ? Math.min(1, (maxA - Math.abs(a)) / 0.25).toFixed(3) : 0;
+      el.style.transform = `translate3d(${x.toFixed(1)}px, 0, ${z.toFixed(1)}px) rotateY(${(-a).toFixed(4)}rad) scale(${K.toFixed(4)})`;
+      el.style.opacity = vis ? (Math.min(1, (maxA - Math.abs(a)) / 0.25) * fade).toFixed(3) : 0;
       el.style.pointerEvents = vis ? "" : "none";         // keep painted (no visibility toggling → no flicker)
       el.dataset.a = a;
     });
@@ -73,6 +83,7 @@
   let raf = 0, last = performance.now(), onScreen = true;
   function tick(t) {
     const dt = Math.min(0.05, (t - last) / 1000); last = t;
+    if (fadeStart && fade < 1) fade = Math.min(1, (t - fadeStart) / 900);
     target = paused ? 0 : hoverSlow ? 0.35 : 1;           // ~60 px/s cruising
     speed += (target - speed) * Math.min(1, dt * 3);
     offset += speed * 60 * dt;
@@ -89,7 +100,10 @@
     onScreen = e.isIntersecting;
     if (onScreen && !entered) {                 // entrance: wall rises in while the cards sweep past fast, then settle
       entered = true;
-      whenReady.then(() => { stage.classList.add("is-in"); if (!reduce) speed = 14; });
+      whenReady.then(() => {
+        stage.classList.add("is-in");
+        if (reduce) { fade = 1; place(); } else { speed = 14; fadeStart = performance.now(); }
+      });
     }
     onScreen ? start() : stop();
   }, { threshold: 0.2 }).observe(stage);
@@ -125,7 +139,7 @@
 
   function finalRect() {
     const vw = innerWidth, vh = innerHeight, narrow = vw < 760;
-    const w = Math.min(narrow ? vw - 24 : 920, vw - 32), h = Math.min(narrow ? vh - 40 : 540, vh - 48);
+    const w = Math.min(narrow ? vw - 24 : 920, vw - 32), h = Math.min(narrow ? vh - 40 : 600, vh - 48);
     return { left: (vw - w) / 2, top: (vh - h) / 2, width: w, height: h };
   }
   const DUR = reduce ? 1 : 720, EASE = "cubic-bezier(.2,.75,.2,1)";
